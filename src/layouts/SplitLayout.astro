@@ -1,0 +1,12 @@
+---
+import Layout from "./Layout.astro";
+
+const { title, currentPage } = Astro.props;
+---
+
+<Layout title={title} currentPage={currentPage}>
+  <div class="lg:flex h-full">
+    <div class="h-full lg:w-2/3"><slot name="Left Content" /></div>
+    <div class="h-screen lg:h-full lg:w-1/3"><slot name="Right Content" /></div>
+  </div>
+</Layout>

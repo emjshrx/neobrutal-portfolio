@@ -1,10 +1,17 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import SplitLayout from "../layouts/SplitLayout.astro";
 import Loading from "../components/Loading.astro";
+import ChewingGum from "../components/ChewingGum.astro";
 ---
 
-<Layout title="Emil's Portfolio" currentPage="Home">
-  <main class="items-center justify-center h-full flex flex-col">
+<SplitLayout title="Emil's Portfolio" currentPage="Home">
+  <main
+    slot="Left Content"
+    class="items-center justify-center h-full flex flex-col background-texture bg-green"
+  >
     still under construction<Loading />
   </main>
-</Layout>
+  <div slot="Right Content" class="h-full overflow-hidden bg-black">
+    <ChewingGum />
+  </div>
+</SplitLayout>

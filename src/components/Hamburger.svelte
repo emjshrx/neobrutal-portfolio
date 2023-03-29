@@ -39,25 +39,21 @@
       </div>
     </button>
     {#if open}
-      <div
-        transition:fade={{ duration: 200 }}
-        class="fixed flex flex-col w-full left-0 top-20 -translate-y-1"
-      >
+      <div class="fixed flex flex-col w-full left-0 top-20 -translate-y-1">
         <a
           in:fly={{ y: -10, duration: 100, delay: 0 }}
-          out:fly={{ y: -10, duration: 100, delay: 100 }}
+          out:fly={{ y: -5, duration: 100, delay: 100 }}
           href="/"
-          class={`text-center  text-2xl p-2 border-b border-x ${
+          class={`text-center  text-2xl p-2 border-b border-x z-20 ${
             currentPage == "Home"
               ? "border-black bg-black text-white"
               : "bg-green"
           }`}>Home</a
         >
         <a
-          in:fly={{ y: -10, duration: 100, delay: 50 }}
-          out:fly={{ y: -10, duration: 100, delay: 50 }}
+          transition:fly={{ y: -10, duration: 100, delay: 50 }}
           href="/about"
-          class={`text-center text-2xl p-2 border-b border-x ${
+          class={`text-center text-2xl p-2 border-b border-x z-10 ${
             currentPage == "About"
               ? "border-black bg-black text-white"
               : "bg-green"
@@ -67,7 +63,7 @@
           in:fly={{ y: -10, duration: 100, delay: 100 }}
           out:fly={{ y: -10, duration: 100, delay: 0 }}
           href="/projects"
-          class={`text-center text-2xl p-2 border-b  border-x rounded-b-lg ${
+          class={`text-center text-2xl p-2 border-b  border-x rounded-b-lg z-0 ${
             currentPage == "Projects"
               ? "border-black bg-black text-white"
               : "bg-green"

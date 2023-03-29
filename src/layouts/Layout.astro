@@ -14,12 +14,11 @@ const { title, currentPage } = Astro.props;
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="generator" content={Astro.generator} />
+  <meta name="description" content="The portfolio website of Emil Joshy" />
   <title>{title}</title>
-  <body class="h-screen flex bg-white flex-col">
+  <body class="flex bg-white flex-col h-screen">
     <Header currentPage={currentPage} />
-    <div class="grow bg-green">
-      <slot />
-    </div>
+    <div class="h-full"><slot /></div>
   </body>
   <style is:global>
     @font-face {
@@ -37,6 +36,10 @@ const { title, currentPage } = Astro.props;
       box-shadow: 2px 4px 0px 0px #000000;
     }
 
+    .background-texture {
+      background-image: url(/texture.svg);
+      background-blend-mode: multiply;
+    }
     button {
       -webkit-tap-highlight-color: transparent;
     }

@@ -8,9 +8,9 @@ const copyRightText = "© 2023. All rights reserved.";
 ---
 
 <SplitLayout title="Emil's Portfolio" currentPage="Home">
-  <main
+  <!-- <main
     slot="Left Content"
-    class="h-full flex flex-col justify-between background-texture bg-green pt-10 px-10"
+    class="h-full flex flex-col md:justify-between background-texture bg-green pt-10 px-10"
   >
     <div class="flex">
       <div class="h-4 w-4 rounded-full bg-white shadow-hard mx-1"></div><div
@@ -20,23 +20,31 @@ const copyRightText = "© 2023. All rights reserved.";
       </div><div class="h-4 w-4 rounded-full bg-white shadow-hard mx-1">
       </div><div class="h-4 w-4 rounded-full bg-white shadow-hard mx-1"></div>
     </div>
-    <div class="ml-5">
+    <div class="mt-[100px] md:ml-5">
       <div
-        class="bg-white border border-black shadow-hard w-max py-1 px-4 text-5xl -rotate-[15deg] mb-8 hover:animate-bounce"
+        class="bg-white border border-black shadow-hard w-max py-1 px-4 text-4xl md:text-5xl -rotate-[15deg] mb-8 hover:animate-bounce"
       >
         Hello
       </div>
-      <div class="text-6xl font-thin ml-5">I AM</div>
-      <div class="text-9xl font-black ml-5">EMIL JOSHY</div>
-      <div class="text-5xl ml-5">{"<coder> <designer> <builder>"}</div>
+      <div class="text-xl md:text-6xl font-thin ml-5">I AM</div>
+      <div class="text-7xl md:text-9xl font-black ml-5">EMIL JOSHY</div>
+      <div class="text-xl md:text-5xl ml-5">
+        {"<coder> <designer> <builder>"}
+      </div>
     </div>
-    <!-- <div
-      class="hidden md:block text-2xl border-black border-2 rounded-2xl px-5 py-1 shadow-hard font-thin cursor-pointer hover:bg-black hover:text-white bg-white w-max"
+    <div
+      class="mt-10 md:block text-2xl border-black border-2 rounded-3xl px-10 py-1 shadow-hard font-thin cursor-pointer hover:bg-black hover:text-white bg-white w-max"
     >
       Let's talk
     </div>
-    <div>Social</div> -->
+    <div>Social</div>
     <div class="hidden lg:block">{copyRightText}</div>
+  </main> -->
+  <main
+    slot="Left Content"
+    class="items-center justify-center h-full flex flex-col bg-green"
+  >
+    still under construction<Loading />
   </main>
   <div slot="Right Content" class="h-full bg-black">
     <ChewingGum />

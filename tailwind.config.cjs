@@ -37,9 +37,6 @@ module.exports = {
         curveIn3: "curveIn3 800ms ease-in-out infinite",
         curveIn4: "curveIn4 800ms ease-in-out infinite",
       },
-      dropShadow: {
-        hard: "2px 4px 0px 0px #000000",
-      },
     },
   },
   plugins: [],

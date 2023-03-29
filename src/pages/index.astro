@@ -2,6 +2,7 @@
 import SplitLayout from "../layouts/SplitLayout.astro";
 import Loading from "../components/Loading.astro";
 import ChewingGum from "../components/ChewingGum.astro";
+import CircleText from "../components/circletext.svg";
 ---
 
 <SplitLayout title="Emil's Portfolio" currentPage="Home">
@@ -11,7 +12,10 @@ import ChewingGum from "../components/ChewingGum.astro";
   >
     still under construction<Loading />
   </main>
-  <div slot="Right Content" class="h-full overflow-hidden bg-black">
+  <div slot="Right Content" class="h-full bg-black">
     <ChewingGum />
+    <div class="hidden lg:block circletext fixed">
+      <img src={CircleText} />
+    </div>
   </div>
 </SplitLayout>

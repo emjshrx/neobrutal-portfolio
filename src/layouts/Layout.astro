@@ -35,6 +35,18 @@ const { title, currentPage } = Astro.props;
     .shadow-hard {
       box-shadow: 2px 4px 0px 0px #000000;
     }
+    @keyframes rotating {
+      100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
+    .circletext {
+      bottom: -282px;
+      right: -290px;
+      animation: rotating 10s infinite;
+      animation-timing-function: linear;
+    }
 
     .background-texture {
       background-image: url(/texture.svg);

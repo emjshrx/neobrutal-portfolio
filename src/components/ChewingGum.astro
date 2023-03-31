@@ -146,16 +146,50 @@
     return d;
   };
 
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function () {
+      var context = this,
+        args = arguments;
+      var later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
   /*--------------------
     Mouse
     --------------------*/
   let mouse = new THREE.Vector2(0, 0);
+  let waiting = true;
   const onMouseMove = (e) => {
     TweenMax.to(mouse, 0.8, {
       x: e.clientX || e.pageX || e.touches[0].pageX || 0,
       y: e.clientY || e.pageY || e.touches[0].pageY || 0,
       ease: Power2.easeOut,
     });
+    if (e.type === "touchmove") {
+      const compliments = [
+        "YOU ARE AWESOME!",
+        "HAVE A NICE DAY!",
+        "THANKS A LOT!",
+        "I FEEL DIZZY!",
+        "YOU LOOK GREAT!",
+        "I LIKE YOUR STYLE!",
+        "YOU'RE A SMART COOKIE!",
+        "YOU MAKE ME BLUSH!",
+      ];
+      debounce(
+        () =>
+          (document.getElementById("chewingText").innerHTML =
+            compliments[Math.floor(Math.random() * compliments.length)]),
+        300
+      )();
+    }
   };
   ["mousemove", "touchmove"].forEach((event) => {
     window.addEventListener(event, onMouseMove);
@@ -244,6 +278,7 @@
   };
   requestAnimationFrame(render);
   renderer.render(scene, camera);
+  document.getElementById("loadingSplash").remove();
 </script>
 
 <style>

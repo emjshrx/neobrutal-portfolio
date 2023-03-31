@@ -9,7 +9,7 @@ const generateLinkStyles = (page: string) =>
 ---
 
 <header
-  class="border-b-4 bg-white border-black flex items-center justify-between h-20 xl:px-20 p-5"
+  class="relative z-50 border-b-4 bg-white border-black flex items-center justify-between h-20 xl:px-20 p-5"
 >
   <div class="flex font-medium text-2xl">
     <div>emj</div><div class="bg-black text-white">shrx</div>
@@ -19,10 +19,11 @@ const generateLinkStyles = (page: string) =>
     <a href="/about" class={generateLinkStyles("About")}>About</a>
     <a href="/projects" class={generateLinkStyles("Projects")}>Projects</a>
   </nav>
-  <div
+  <a
     class="hidden md:block text-2xl border-black border-2 rounded-2xl px-2 py-1 shadow-hard font-thin cursor-pointer hover:bg-black hover:text-white"
+    href="mailTo:emjshrx@gmail.com"
   >
     Let's talk
-  </div>
+  </a>
   <Hamburger client:visible currentPage={currentPage} />
 </header>

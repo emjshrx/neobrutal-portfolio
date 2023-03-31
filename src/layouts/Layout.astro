@@ -1,5 +1,6 @@
 ---
 import Header from "../components/CustomHeader.astro";
+import Loading from "../components/Loading.astro";
 export interface Props {
   title: string;
   currentPage: string;
@@ -15,10 +16,22 @@ const { title, currentPage } = Astro.props;
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="generator" content={Astro.generator} />
   <meta name="description" content="The portfolio website of Emil Joshy" />
+  <meta property="og:image" content="/favicon.svg" />
+  <meta name="title" content={title} />
   <title>{title}</title>
-  <body class="flex bg-white flex-col h-screen">
-    <Header currentPage={currentPage} />
-    <div class="h-full"><slot /></div>
+  <body class="flex bg-white flex-col lg:h-screen">
+    <div
+      id="loadingSplash"
+      class={`${
+        currentPage !== "Home" ? "hidden" : ""
+      } bg-green h-full w-full fixed z-50 flex items-center justify-center`}
+    >
+      <Loading />
+    </div>
+    <div class="grow-0 shrink-0 sticky top-0 z-40">
+      <Header currentPage={currentPage} />
+    </div>
+    <div class="grow shrink min-h-0 z-0"><slot /></div>
   </body>
   <style is:global>
     @font-face {
@@ -35,6 +48,9 @@ const { title, currentPage } = Astro.props;
     .shadow-hard {
       box-shadow: 2px 4px 0px 0px #000000;
     }
+    .shadow-hard-2 {
+      box-shadow: 6px 6px 0px 0px #000000;
+    }
     @keyframes rotating {
       100% {
         -webkit-transform: rotate(-360deg);
@@ -42,8 +58,6 @@ const { title, currentPage } = Astro.props;
       }
     }
     .circletext {
-      bottom: -282px;
-      right: -290px;
       animation: rotating 10s infinite;
       animation-timing-function: linear;
     }
@@ -51,9 +65,38 @@ const { title, currentPage } = Astro.props;
     .background-texture {
       background-image: url(/texture.svg);
       background-blend-mode: multiply;
+      background-size: cover;
     }
     button {
       -webkit-tap-highlight-color: transparent;
+    }
+
+    img {
+      -webkit-user-select: none;
+      -moz-user-select: -moz-none;
+      /*IE10*/
+      -ms-user-select: none;
+      user-select: none;
+
+      /*You just need this if you are only concerned with android and not desktop browsers.*/
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    .wave:hover {
+      animation: wave 1s infinite;
+    }
+
+    @keyframes wave {
+      0%,
+      100% {
+        transform: rotate(-2%);
+        transform-origin: center;
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      }
+      50% {
+        transform: rotate(0);
+        transform-origin: left;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      }
     }
   </style>
 </html>

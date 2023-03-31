@@ -1,58 +1,100 @@
 ---
-import SplitLayout from "../layouts/SplitLayout.astro";
-import Loading from "../components/Loading.astro";
 import ChewingGum from "../components/ChewingGum.astro";
-import CircleText from "../../public/circleText.svg";
+import CircleText from "/circleText.svg";
+import Circles from "../components/intro/circles.astro";
+import SplitLayout from "../layouts/SplitLayout.astro";
 
 const copyRightText = "© 2023. All rights reserved.";
 ---
 
 <SplitLayout title="Emil's Portfolio" currentPage="Home">
-  <!-- <main
+  <main
     slot="Left Content"
-    class="h-full flex flex-col md:justify-between background-texture bg-green pt-10 px-10"
+    class="h-full flex flex-col justify-between background-texture bg-green py-6 px-5 md:p-[3%]"
   >
-    <div class="flex">
-      <div class="h-4 w-4 rounded-full bg-white shadow-hard mx-1"></div><div
-        class="h-4 w-4 rounded-full bg-white shadow-hard mx-1"
-      >
-      </div><div class="h-4 w-4 rounded-full bg-white shadow-hard mx-1">
-      </div><div class="h-4 w-4 rounded-full bg-white shadow-hard mx-1">
-      </div><div class="h-4 w-4 rounded-full bg-white shadow-hard mx-1"></div>
+    <Circles />
+    <div class="absolute top-44 -right-5 -rotate-90">
+      <Circles />
     </div>
-    <div class="mt-[100px] md:ml-5">
+    <div class="md:ml-5 flex flex-col justify-between min-h-[60%]">
       <div
-        class="bg-white border border-black shadow-hard w-max py-1 px-4 text-4xl md:text-5xl -rotate-[15deg] mb-8 hover:animate-bounce"
+        class="wave bg-white border border-black shadow-hard-2 w-max py-1 px-4 text-4xl md:text-5xl -rotate-12 mb-8 mt-[5vh] lg:mt-[12vh]"
       >
         Hello
       </div>
-      <div class="text-xl md:text-6xl font-thin ml-5">I AM</div>
-      <div class="text-7xl md:text-9xl font-black ml-5">EMIL JOSHY</div>
-      <div class="text-xl md:text-5xl ml-5">
+      <img
+        src="/swirly.svg"
+        class="absolute top-[30%] right-24 lg:left-1/3 w-28 lg:w-[10%]"
+        alt="A cute swirly"
+      />
+      <div>
+        <div class="text-3xl md:text-6xl font-thin ml-5">I AM</div>
+        <div class="text-8xl md:text-9xl font-black ml-5">EMIL JOSHY</div>
+      </div>
+      <div class="text-xl md:text-4xl ml-5">
         {"<coder> <designer> <builder>"}
       </div>
     </div>
-    <div
-      class="mt-10 md:block text-2xl border-black border-2 rounded-3xl px-10 py-1 shadow-hard font-thin cursor-pointer hover:bg-black hover:text-white bg-white w-max"
-    >
-      Let's talk
+    <div class="lg:mt-5 ml-5 lg:ml-10">
+      <img
+        src="/Star.svg"
+        class="w-12 h-12 translate-y-3 -translate-x-2"
+        alt="A sparkle"
+      />
+      <a
+        class="md:block text-2xl border-black border-2 rounded-2xl px-10 py-1 shadow-hard font-thin cursor-pointer hover:bg-black hover:text-white bg-white w-max"
+        href="mailTo:emjshrx@gmail.com"
+      >
+        Let's talk
+      </a>
     </div>
-    <div>Social</div>
-    <div class="hidden lg:block">{copyRightText}</div>
-  </main> -->
-  <main
-    slot="Left Content"
-    class="items-center justify-center h-full flex flex-col bg-green"
-  >
-    still under construction<Loading />
+
+    <div class="mt-8 ml-5 flex lg:ml-10">
+      <a
+        class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-green"
+        href="https://github.com/emjshrx/"
+        target="_blank"
+        ><img src="/github.svg" class="w-6 h-6" alt="Github" /></a
+      ><a
+        class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-green"
+        href="https://discordapp.com/users/emjshrx#3515"
+        target="_blank"
+        ><img src="/discord.svg" class="w-6 h-6" alt="Discord" /></a
+      ><a
+        class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-green"
+        href="https://twitter.com/emjshrx"
+        target="_blank"
+        ><img src="/twitter.svg" class="w-6 h-6" alt="Twitter" /></a
+      ><a
+        class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-green"
+        href="https://www.linkedin.com/in/emil-joshy-1ab610144/"
+        target="_blank"
+        ><img src="/linkedin.svg" class="w-6 h-6" alt="Linkedin" /></a
+      >
+    </div>
+    <div class="hidden lg:block text-right">{copyRightText}</div>
   </main>
-  <div slot="Right Content" class="h-full bg-black">
-    <ChewingGum />
-    <div class="hidden lg:block circletext fixed">
-      <img src={CircleText} />
+  <div slot="Right Content" class="h-full bg-black overflow-hidden">
+    <div
+      id="chewingText"
+      class="text-white opacity-10 relative top-52 text-center text-2xl md:text-5xl lg:hidden"
+    >
+      SPIN ME!
     </div>
-    <div class="text-white relative bottom-6 text-center lg:hidden">
+    <ChewingGum />
+    <div class="text-white relative bottom-20 text-center lg:hidden">
       {copyRightText}
+    </div>
+    <div
+      class="hidden circletext h-2/3 relative top-[-50%] right-[-30%] lg:flex justify-center"
+    >
+      <img
+        src={CircleText}
+        class="h-full w-full"
+        alt="Built with Astro and Svelte!"
+      />
     </div>
   </div>
 </SplitLayout>
+
+<style></style>

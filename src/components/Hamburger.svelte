@@ -1,18 +1,22 @@
 <script>
-  import { fade, fly } from "svelte/transition";
+  import { fly } from "svelte/transition";
   let open = false;
-  function handleClick() {
+  function handleClose() {
+    open = false;
+  }
+  function handleClick(e) {
     open = !open;
   }
   export let currentPage;
 </script>
 
+<svelte:window on:scroll={handleClose} />
 <div class="md:hidden">
   <nav>
     <button
       class="w-10 h-10 relative focus:outline-none"
       on:click={handleClick}
-      on:blur={handleClick}
+      on:blur={handleClose}
     >
       <span class="sr-only">Open main menu</span>
       <div
@@ -39,7 +43,7 @@
       </div>
     </button>
     {#if open}
-      <div class="fixed flex flex-col w-full left-0 top-20 -translate-y-1">
+      <div class="flex flex-col w-full left-0 absolute top-20 -translate-y-1">
         <a
           in:fly={{ y: -10, duration: 100, delay: 0 }}
           out:fly={{ y: -5, duration: 100, delay: 100 }}

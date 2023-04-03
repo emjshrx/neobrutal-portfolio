@@ -174,8 +174,8 @@
         "YOU MAKE ME BLUSH!",
       ];
       if (
-        e.touches[0].clientX - start_x > 50 ||
-        e.touches[0].clientY - start_y > 50
+        Math.abs(e.touches[0].clientX - start_x) > 100 ||
+        Math.abs(e.touches[0].clientY - start_y) > 100
       ) {
         document.getElementById("chewingText").innerHTML =
           compliments[Math.floor(Math.random() * compliments.length)];

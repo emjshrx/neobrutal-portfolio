@@ -145,34 +145,24 @@
     const d = Math.sqrt(dx * dx + dy * dy);
     return d;
   };
-
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function () {
-      var context = this,
-        args = arguments;
-      var later = function () {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  }
   /*--------------------
     Mouse
     --------------------*/
   let mouse = new THREE.Vector2(0, 0);
-  let waiting = true;
+  let start_x, start_y;
+  const onSpinBegin = (e) => {
+    if (e.target === canvas) {
+      start_x = e.touches[0].clientX;
+      start_y = e.touches[0].clientY;
+    }
+  };
   const onMouseMove = (e) => {
     TweenMax.to(mouse, 0.8, {
       x: e.clientX || e.pageX || e.touches[0].pageX || 0,
       y: e.clientY || e.pageY || e.touches[0].pageY || 0,
       ease: Power2.easeOut,
     });
-    if (e.type === "touchmove") {
+    if (e.type === "touchmove" && e.target === canvas) {
       const compliments = [
         "YOU ARE AWESOME!",
         "HAVE A NICE DAY!",
@@ -183,17 +173,20 @@
         "YOU'RE A SMART COOKIE!",
         "YOU MAKE ME BLUSH!",
       ];
-      debounce(
-        () =>
-          (document.getElementById("chewingText").innerHTML =
-            compliments[Math.floor(Math.random() * compliments.length)]),
-        300
-      )();
+      if (
+        e.touches[0].clientX - start_x > 100 ||
+        e.touches[0].clientY - start_y > 100
+      ) {
+        document.getElementById("chewingText").innerHTML =
+          compliments[Math.floor(Math.random() * compliments.length)];
+      }
     }
   };
   ["mousemove", "touchmove"].forEach((event) => {
     window.addEventListener(event, onMouseMove);
   });
+
+  window.addEventListener("touchstart", onSpinBegin);
 
   /*--------------------
     Spring

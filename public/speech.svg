@@ -1,0 +1,10 @@
+<svg width="203" height="106" viewBox="0 0 203 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filtershadow)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C3.79086 2 2 3.79086 2 6V54C2 56.2091 3.79086 58 5.99999 58H132L175 101L170.865 58H197C199.209 58 201 56.2091 201 54V6C201 3.79086 199.209 2 197 2H6Z" fill="white" stroke="#333532" stroke-width="3"/>
+  </g>
+<defs>
+<filter id="filtershadow" x="0" y="0" width="203" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feDropShadow dx="6" dy="6" stdDeviation="0" flood-opacity="1"/>
+</filter>
+</defs>
+</svg>

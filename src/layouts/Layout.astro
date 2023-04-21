@@ -85,6 +85,28 @@ const { title, currentPage } = Astro.props;
       animation: wave 1s infinite;
     }
 
+    .block_text {
+      font-family: "Sudo Var";
+      font-style: normal;
+      font-weight: 900;
+      text-transform: uppercase;
+      --x-offset: 0.1em;
+      --y-offset: 0.05em;
+      --stroke: 0.025em;
+      --background-color: #e9eddf;
+      --stroke-color: #333532;
+
+      text-shadow: 1px -1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color),
+        -1px -1px 0 var(--stroke-color), -1px 1px 0 var(--stroke-color),
+        var(--x-offset) var(--y-offset) 0px var(--background-color),
+        calc(var(--x-offset) - var(--stroke))
+          calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+      letter-spacing: 0.05em;
+    }
+    .invert_child:hover > img {
+      filter: invert();
+    }
+
     @keyframes wave {
       0%,
       100% {

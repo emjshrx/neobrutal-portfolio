@@ -37,6 +37,9 @@ module.exports = {
         curveIn3: "curveIn3 800ms ease-in-out infinite",
         curveIn4: "curveIn4 800ms ease-in-out infinite",
       },
+      screens: {
+        tall: { raw: "(min-height: 700px)" },
+      },
     },
   },
   plugins: [],

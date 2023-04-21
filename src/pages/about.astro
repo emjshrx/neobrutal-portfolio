@@ -1,10 +1,137 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Loading from "../components/Loading.astro";
+import FacePic from "../components/FacePic.astro";
+import Circles from "../components/intro/circles.astro";
+import SplitLayout from "../layouts/SplitLayout.astro";
 ---
 
-<Layout title="About Emil" currentPage="About">
-  <main class="items-center justify-center h-screen flex flex-col bg-green">
-    still under construction<Loading />
+<SplitLayout title="About Emil" currentPage="About">
+  <main
+    slot="Left Content"
+    class="h-full flex flex-col justify-between bg-white py-[5%] px-5 md:px-12 overflow-hidden"
+  >
+    <Circles />
+    <img
+      src="/Star.svg"
+      class="w-20 h-20 right-[20%] top-[15%] lg:left-1/2 absolute z-10"
+      alt="A sparkle"
+    />
+    <div class="absolute top-[20%] -right-5 -rotate-90 z-10">
+      <Circles />
+    </div>
+    <div class="mt-3">
+      <div class="font-bold text-3xl tall:md:text-5xl mb-7">() About</div>
+      <p class="w-full tall:md:w-2/3 text-sm tall:lg:text-lg">
+        A humble pleb passionate about building beautiful UXs for the internet.
+        With more than 2 years' experience building frontends for distributed
+        systems, I have grown to love the intricacy of money and finance
+        systems. A bitcoin noob currently trying his hand at self-hosted nodes
+        and a bit of open-source contributions. If I am not at my desk, you can
+        find me at the gym, taking a run, or diving underwater.
+      </p>
+      <div class="mt-[5%] flex w-full md:w-2/3 justify-between">
+        <div
+          class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
+        >
+          <img src="/js.svg" class="w-10 h-10" alt="Javascript" />
+        </div>
+        <div
+          class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
+        >
+          <img src="/react.svg" class="w-10 h-10" alt="React" />
+        </div><div
+          class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
+        >
+          <img src="/graphql.svg" class="w-10 h-10" alt="Graphql" />
+        </div><div
+          class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
+        >
+          <img src="/rust.svg" class="w-10 h-10" alt="Rust" />
+        </div><div
+          class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
+        >
+          <img src="/figma.svg" class="w-10 h-10" alt="Figma" />
+        </div><div
+          class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
+        >
+          <img src="/bitcoin.svg" class="w-10 h-10" alt="Bitcoin" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-5xl tall:md:text-8xl font-thin absolute right-12 lg:right-[20%] top-[65%] lg:top-[55%] lg:left-1/2"
+    >
+      {">>>"}
+    </div>
+    <div class="mt-3">
+      <div class="block_text text-white text-3xl tall:md:text-5xl">
+        Eat Healthy
+      </div><div
+        class="block_text text-white text-3xl tall:md:text-5xl text-center"
+      >
+        Be humble
+      </div><div
+        class="block_text text-white text-3xl tall:md:text-5xl text-end"
+      >
+        Enjoy Nature
+      </div><div
+        class="block_text text-white text-3xl tall:md:text-5xl -translate-y-2"
+      >
+        Lift Weights
+      </div>
+      <div
+        class="block_text text-white text-3xl tall:md:text-5xl translate-x-[10%] -translate-y-2"
+      >
+        Stack sats
+      </div>
+    </div>
+    <div>
+      {"<<< words to live by"}
+      <img
+        src="/shootingStars.svg"
+        class="absolute bottom-0 right-[5%] lg:right-0 lg:left-[20%] w-1/2 lg:w-1/3"
+        alt="A pair of shooting stars!"
+      />
+    </div>
   </main>
-</Layout>
+  <div
+    slot="Right Content"
+    class="h-full bg-green flex items-center justify-center relative overflow-hidden"
+  >
+    <img src="/shape.svg" class="absolute lg:w-3/4 translate-x-[10%]" />
+    <FacePic />
+    <div class="absolute top-[15%] left-[5%]">
+      <div class="text-3xl font-thin absolute my-3 mx-5">Let's talk !</div>
+      <img src="/speech.svg" class="" />
+    </div>
+    <div
+      class="mt-8 ml-5 flex flex-col lg:ml-10 absolute right-5 lg:right-12 lg:bottom-24 bottom-5"
+    >
+      <a
+        class="w-9 h-9 border-2 rounded flex shadow-hard items-center justify-center mb-3 bg-white hover:bg-black invert_child"
+        href="https://github.com/emjshrx/"
+        target="_blank"
+        ><img src="/github.svg" class="w-6 h-6" alt="Github" /></a
+      ><a
+        class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mb-3 bg-white hover:bg-black invert_child"
+        href="https://www.instagram.com/emjshrx/"
+        target="_blank"
+        ><img src="/instagram.svg" class="w-6 h-6" alt="Instagram" /></a
+      ><a
+        class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mb-3 bg-white hover:bg-black invert_child"
+        href="https://twitter.com/emjshrx"
+        target="_blank"
+        ><img src="/twitter.svg" class="w-6 h-6" alt="Twitter" /></a
+      ><a
+        class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mb-3 bg-white hover:bg-black invert_child"
+        href="https://www.linkedin.com/in/emil-joshy-1ab610144/"
+        target="_blank"
+        ><img src="/linkedin.svg" class="w-6 h-6" alt="Linkedin" /></a
+      >
+    </div>
+    <img
+      src="/swirly.svg"
+      class="absolute left-2 bottom-1/3 w-1/6"
+      alt="A cute swirly"
+    />
+  </div>
+</SplitLayout>

@@ -1,0 +1,10 @@
+<svg width="600" height="526" viewBox="0 0 586 526" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filtershadow2)">
+<path d="M93.8641 116.489C160.004 124.264 328.919 64.6537 405.109 33.8767C746.914 -130.687 532.832 389.273 310.277 514.97C254.35 546.557 135.201 493.102 47.6637 388.622C-39.8739 284.142 11.1897 106.77 93.8641 116.489Z" fill="#FCFEF5" stroke="#333532" stroke-width="3"/>
+  </g>
+<defs>
+<filter id="filtershadow2" x="0" y="0"  width="600" height="526" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feDropShadow dx="6" dy="6" stdDeviation="0" flood-opacity="1"/>
+</filter>
+</defs>
+</svg>

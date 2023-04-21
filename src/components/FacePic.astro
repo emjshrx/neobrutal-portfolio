@@ -1,0 +1,58 @@
+<div class="relative w-full md:w-4/5 translate-y-[5%] aspect-square" id="head">
+  <img
+    src="/face/eye_mono.png"
+    class="absolute transition-transform ease-out"
+    id="rightEye"
+  />
+  <img
+    src="/face/eye_mono.png"
+    class="absolute transition-transform ease-out -translate-x-[21%]"
+    id="leftEye"
+  />
+  <img src="/face/neck_2_di.png" class="absolute" />
+  <img
+    src="/face/face_2_di.png"
+    class="absolute transition-transform ease-in-out"
+    id="face"
+  />
+</div>
+
+<script>
+  const head = document.querySelector("#head") as Element;
+  const face = document.querySelector("#face") as Element;
+  const rightEye = document.querySelector("#rightEye") as Element;
+  const leftEye = document.querySelector("#leftEye") as Element;
+
+  const rekt = head.getBoundingClientRect();
+  const anchorX = rekt.left + rekt.width / 2;
+  const anchorY = rekt.top + rekt.height / 2;
+  document.onmousemove = (event) => {
+    const dx = event.clientX - anchorX;
+    const dy = event.clientY - anchorY;
+    const rad = Math.atan2(dy, dx);
+    let outDeg = (rad * 180) / Math.PI;
+
+    if (outDeg > 90) {
+      outDeg -= 180;
+    } else if (outDeg < -90) {
+      outDeg += 180;
+    }
+    if (outDeg > 2) {
+      outDeg = 2;
+    } else if (outDeg < -1) {
+      outDeg = -1;
+    }
+    face.style.transform = `rotate(${outDeg}deg)`;
+
+    let x = (event.clientX * 6) / window.innerWidth;
+    const y = (event.clientY * 2) / window.innerHeight - 1;
+    if (x > 4.6) {
+      x = 6;
+    } else {
+      x = 0;
+    }
+    rightEye.style.transform = "translate(" + x + "% , " + y + "%)";
+    leftEye.style.transform =
+      "translate(" + (x - 21) + "% , " + (y - 1.5) + "%)";
+  };
+</script>

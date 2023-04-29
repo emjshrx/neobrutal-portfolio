@@ -11,6 +11,7 @@ import SplitLayout from "../layouts/SplitLayout.astro";
   >
     <Circles />
     <img
+      draggable="false"
       src="/Star.svg"
       class="w-20 h-20 right-[20%] top-[15%] lg:left-1/2 absolute z-10"
       alt="A sparkle"
@@ -32,33 +33,58 @@ import SplitLayout from "../layouts/SplitLayout.astro";
         <div
           class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
         >
-          <img src="/js.svg" class="w-10 h-10" alt="Javascript" />
+          <img
+            draggable="false"
+            src="/js.svg"
+            class="w-10 h-10"
+            alt="Javascript"
+          />
         </div>
         <div
           class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
         >
-          <img src="/react.svg" class="w-10 h-10" alt="React" />
+          <img
+            draggable="false"
+            src="/react.svg"
+            class="w-10 h-10"
+            alt="React"
+          />
         </div><div
           class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
         >
-          <img src="/graphql.svg" class="w-10 h-10" alt="Graphql" />
+          <img
+            draggable="false"
+            src="/graphql.svg"
+            class="w-10 h-10"
+            alt="Graphql"
+          />
         </div><div
           class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
         >
-          <img src="/rust.svg" class="w-10 h-10" alt="Rust" />
+          <img draggable="false" src="/rust.svg" class="w-10 h-10" alt="Rust" />
         </div><div
           class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
         >
-          <img src="/figma.svg" class="w-10 h-10" alt="Figma" />
+          <img
+            draggable="false"
+            src="/figma.svg"
+            class="w-10 h-10"
+            alt="Figma"
+          />
         </div><div
           class="w-12 h-12 border-2 rounded shadow-hard flex items-center justify-center bg-white"
         >
-          <img src="/bitcoin.svg" class="w-10 h-10" alt="Bitcoin" />
+          <img
+            draggable="false"
+            src="/bitcoin.svg"
+            class="w-10 h-10"
+            alt="Bitcoin"
+          />
         </div>
       </div>
     </div>
     <div
-      class="text-5xl tall:md:text-8xl font-thin absolute right-12 lg:right-[20%] top-[65%] lg:top-[55%] lg:left-1/2"
+      class="text-5xl tall:md:text-8xl font-thin absolute right-12 lg:right-[20%] top-[65%] lg:top-[55%] lg:left-1/2 select-none"
     >
       {">>>"}
     </div>
@@ -85,8 +111,9 @@ import SplitLayout from "../layouts/SplitLayout.astro";
       </div>
     </div>
     <div>
-      {"<<< words to live by"}
+      {"<<< about"}
       <img
+        draggable="false"
         src="/shootingStars.svg"
         class="absolute bottom-0 right-[5%] lg:right-0 lg:left-[20%] w-1/2 lg:w-1/3"
         alt="A pair of shooting stars!"
@@ -97,11 +124,15 @@ import SplitLayout from "../layouts/SplitLayout.astro";
     slot="Right Content"
     class="h-full bg-green flex items-center justify-center relative overflow-hidden"
   >
-    <img src="/shape.svg" class="absolute lg:w-3/4 translate-x-[10%]" />
+    <img
+      draggable="false"
+      src="/shape.svg"
+      class="absolute lg:w-3/4 translate-x-[10%]"
+    />
     <FacePic />
     <div class="absolute top-[15%] left-[5%]">
       <div class="text-3xl font-thin absolute my-3 mx-5">Let's talk !</div>
-      <img src="/speech.svg" class="" />
+      <img draggable="false" src="/speech.svg" class="" />
     </div>
     <div
       class="mt-8 ml-5 flex flex-col lg:ml-10 absolute right-5 lg:right-12 lg:bottom-24 bottom-5"
@@ -110,27 +141,48 @@ import SplitLayout from "../layouts/SplitLayout.astro";
         class="w-9 h-9 border-2 rounded flex shadow-hard items-center justify-center mb-3 bg-white hover:bg-black invert_child"
         href="https://github.com/emjshrx/"
         target="_blank"
-        ><img src="/github.svg" class="w-6 h-6" alt="Github" /></a
+        ><img
+          draggable="false"
+          src="/github.svg"
+          class="w-6 h-6"
+          alt="Github"
+        /></a
       ><a
         class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mb-3 bg-white hover:bg-black invert_child"
         href="https://www.instagram.com/emjshrx/"
         target="_blank"
-        ><img src="/instagram.svg" class="w-6 h-6" alt="Instagram" /></a
+        ><img
+          draggable="false"
+          src="/instagram.svg"
+          class="w-6 h-6"
+          alt="Instagram"
+        /></a
       ><a
         class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mb-3 bg-white hover:bg-black invert_child"
         href="https://twitter.com/emjshrx"
         target="_blank"
-        ><img src="/twitter.svg" class="w-6 h-6" alt="Twitter" /></a
+        ><img
+          draggable="false"
+          src="/twitter.svg"
+          class="w-6 h-6"
+          alt="Twitter"
+        /></a
       ><a
         class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mb-3 bg-white hover:bg-black invert_child"
         href="https://www.linkedin.com/in/emil-joshy-1ab610144/"
         target="_blank"
-        ><img src="/linkedin.svg" class="w-6 h-6" alt="Linkedin" /></a
+        ><img
+          draggable="false"
+          src="/linkedin.svg"
+          class="w-6 h-6"
+          alt="Linkedin"
+        /></a
       >
     </div>
     <img
+      draggable="false"
       src="/swirly.svg"
-      class="absolute left-2 bottom-1/3 w-1/6"
+      class="absolute left-2 bottom-1/3 w-[15%]"
       alt="A cute swirly"
     />
   </div>

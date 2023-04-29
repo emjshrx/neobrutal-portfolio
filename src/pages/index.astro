@@ -23,8 +23,9 @@ const copyRightText = "© 2023. All rights reserved.";
         Hello
       </div>
       <img
+        draggable="false"
         src="/swirly.svg"
-        class="absolute top-[30%] right-24 lg:left-1/3 w-28 lg:w-[10%]"
+        class="absolute top-[30%] right-24 lg:left-1/3 w-16 lg:w-[5%]"
         alt="A cute swirly"
       />
       <div>
@@ -37,6 +38,7 @@ const copyRightText = "© 2023. All rights reserved.";
     </div>
     <div class="lg:mt-5 ml-5 lg:ml-10">
       <img
+        draggable="false"
         src="/Star.svg"
         class="w-12 h-12 translate-y-3 -translate-x-2"
         alt="A sparkle"
@@ -54,22 +56,42 @@ const copyRightText = "© 2023. All rights reserved.";
         class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-black invert_child"
         href="https://github.com/emjshrx/"
         target="_blank"
-        ><img src="/github.svg" class="w-6 h-6" alt="Github" /></a
+        ><img
+          draggable="false"
+          src="/github.svg"
+          class="w-6 h-6"
+          alt="Github"
+        /></a
       ><a
         class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-black invert_child"
         href="https://www.instagram.com/emjshrx/"
         target="_blank"
-        ><img src="/instagram.svg" class="w-6 h-6" alt="Instagram" /></a
+        ><img
+          draggable="false"
+          src="/instagram.svg"
+          class="w-6 h-6"
+          alt="Instagram"
+        /></a
       ><a
         class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-black invert_child"
         href="https://twitter.com/emjshrx"
         target="_blank"
-        ><img src="/twitter.svg" class="w-6 h-6" alt="Twitter" /></a
+        ><img
+          draggable="false"
+          src="/twitter.svg"
+          class="w-6 h-6"
+          alt="Twitter"
+        /></a
       ><a
         class="w-9 h-9 border-2 rounded shadow-hard flex items-center justify-center mr-5 bg-white hover:bg-black invert_child"
         href="https://www.linkedin.com/in/emil-joshy-1ab610144/"
         target="_blank"
-        ><img src="/linkedin.svg" class="w-6 h-6" alt="Linkedin" /></a
+        ><img
+          draggable="false"
+          src="/linkedin.svg"
+          class="w-6 h-6"
+          alt="Linkedin"
+        /></a
       >
     </div>
     <div class="hidden lg:block text-right">{copyRightText}</div>
@@ -89,6 +111,7 @@ const copyRightText = "© 2023. All rights reserved.";
       class="hidden circletext h-2/3 relative top-[-50%] right-[-30%] lg:flex justify-center"
     >
       <img
+        draggable="false"
         src={CircleText}
         class="h-full w-full"
         alt="Built with Astro and Svelte!"

@@ -7,6 +7,7 @@ export interface Props {
 }
 
 const { title, currentPage } = Astro.props;
+const completedPages = ["Home", "About"];
 ---
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@ const { title, currentPage } = Astro.props;
     <div
       id="loadingSplash"
       class={`${
-        currentPage !== "Home" ? "hidden" : ""
+        completedPages.includes(currentPage) ? "" : "hidden"
       } bg-green h-full w-full fixed z-50 flex items-center justify-center`}
     >
       <Loading />

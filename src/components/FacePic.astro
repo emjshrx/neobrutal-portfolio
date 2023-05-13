@@ -25,7 +25,9 @@
   const face = document.querySelector("#face") as Element;
   const rightEye = document.querySelector("#rightEye") as Element;
   const leftEye = document.querySelector("#leftEye") as Element;
-
+  face.addEventListener("load", () => {
+    document.getElementById("loadingSplash").remove();
+  });
   const rekt = head.getBoundingClientRect();
   const anchorX = rekt.left + rekt.width / 2;
   const anchorY = rekt.top + rekt.height / 2;

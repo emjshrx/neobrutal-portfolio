@@ -36,18 +36,17 @@
     const dy = event.clientY - anchorY;
     const rad = Math.atan2(dy, dx);
     let outDeg = (rad * 180) / Math.PI;
-
     if (outDeg > 90) {
       outDeg -= 180;
     } else if (outDeg < -90) {
       outDeg += 180;
     }
-    if (outDeg > 2) {
-      outDeg = 2;
-    } else if (outDeg < -1) {
-      outDeg = -1;
+    if (outDeg > 90) {
+      outDeg = 90;
+    } else if (outDeg < -17) {
+      outDeg = -17;
     }
-    face.style.transform = `rotate(${outDeg}deg)`;
+    face.style.transform = `rotate(${outDeg / 10}deg)`;
 
     let x = (event.clientX * 6) / window.innerWidth;
     const y = (event.clientY * 2) / window.innerHeight - 1;

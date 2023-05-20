@@ -1,10 +1,38 @@
 ---
+type ProjectType = {
+  name: string;
+  description: string;
+  html_url: string;
+};
+import Projects from "../components/Projects";
+import Circles from "../components/intro/circles.astro";
+// import { projectsList } from "../constants/devConstants";
 import Layout from "../layouts/Layout.astro";
-import Loading from "../components/Loading.astro";
+const projectsResponse = await fetch(
+  "https://api.github.com/users/emjshrx/repos"
+);
+let projectsList = (await projectsResponse.json()) as ProjectType[];
+const blockList = ["Tokal", "emjshrx.github.io"];
+projectsList = projectsList.filter(
+  (project) => !blockList.includes(project.name)
+);
 ---
 
 <Layout title="Emil's Projects" currentPage="Projects">
-  <main class="items-center justify-center h-screen flex flex-col bg-green">
-    still under construction<Loading />
+  <main class="bg-white h-full">
+    <div class="flex justify-center items-center h-full">
+      <Projects projectsList={projectsList} />
+    </div>
+    <div class="absolute top-[15%] lg:top-[10%] left-5"><Circles /></div>
+    <div class="absolute top-[25%] lg:top-[20%] -right-5 -rotate-90 z-10">
+      <Circles />
+    </div>
+
+    <img
+      draggable="false"
+      src="/shootingStars.svg"
+      class="w-[50%] lg:w-[25%] -rotate-90 origin-bottom-left right-[-50%] lg:right-[-25%] bottom-0 absolute"
+      alt="A pair of shooting stars!"
+    />
   </main>
 </Layout>

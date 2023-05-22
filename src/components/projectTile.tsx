@@ -17,8 +17,9 @@ const ProjectTile = ({
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
-          className="w-full h-full bg-black bg-blend-hard-light group-hover:opacity-100 opacity-80"
+          className="w-full h-full bg-black group-hover:opacity-100 opacity-80"
         />
+        <div className="w-full h-full bg-black group-hover:opacity-0 opacity-50 absolute" />
         <div
           className={`${
             variant == 1 ? "bg-green text-black" : "bg-black text-green"

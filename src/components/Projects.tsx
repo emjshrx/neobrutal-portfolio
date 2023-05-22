@@ -7,7 +7,7 @@ type ProjectType = {
 
 const Projects = ({ projectsList }: { projectsList: ProjectType[] }) => {
   return (
-    <div className="h-full w-full p-[5%] grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="h-full w-full p-[5%] grid gap-y-12 gap-x-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {projectsList.map((project, index) => {
         return (
           <a href={project.html_url} key={project.html_url} target="_blank">

@@ -48,12 +48,15 @@
     }
     face.style.transform = `rotate(${outDeg / 10}deg)`;
 
-    let x = (event.clientX * 6) / window.innerWidth;
-    const y = (event.clientY * 2) / window.innerHeight - 1;
+    let x = (event.clientX * 6) / window.innerWidth ?? 0;
+    let y = (event.clientY * 2) / window.innerHeight - 1 ?? 0;
     if (x > 4.6) {
       x = 6;
     } else {
       x = 0;
+    }
+    if (y > 0.55) {
+      y = 0.55;
     }
     rightEye.style.transform = "translate(" + x + "% , " + y + "%)";
     leftEye.style.transform =

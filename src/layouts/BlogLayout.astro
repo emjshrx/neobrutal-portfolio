@@ -2,7 +2,7 @@
 import Layout from "./Layout.astro";
 import "../styles/blog.css";
 import type { MarkdownInstance } from "astro";
-const { title } = Astro.props;
+const { title, isIndex } = Astro.props;
 const allPosts = await Astro.glob("../pages/blog/*.md");
 const allPostsMap: Record<string, MarkdownInstance<Record<string, any>>[]> = {};
 allPosts.forEach((post) =>
@@ -14,7 +14,9 @@ allPosts.forEach((post) =>
 
 <Layout title={title} currentPage={"Blog"}>
   <div class="lg:flex h-full">
-    <div class="h-[90vh] lg:h-full lg:w-1/5 bg-black p-4">
+    <div
+      class=`h-[90vh] lg:h-full lg:w-1/5 bg-black p-4 lg:block ${!isIndex? " hidden":""}`
+    >
       <div class="text-white text-center w-full text-3xl">Index</div>
       <ul class="mt-4">
         {
@@ -33,6 +35,10 @@ allPosts.forEach((post) =>
         }
       </ul>
     </div>
-    <div class="h-screen lg:h-full lg:w-4/5 p-4"><slot /></div>
+    <div
+      class=`h-screen lg:h-full lg:w-4/5 p-4 lg:block ${isIndex? " hidden":""}`
+    >
+      <slot />
+    </div>
   </div>
 </Layout>

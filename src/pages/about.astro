@@ -7,7 +7,7 @@ import SplitLayout from "../layouts/SplitLayout.astro";
 <SplitLayout title="About Emil" currentPage="About">
   <main
     slot="Left Content"
-    class="h-full flex flex-col justify-between bg-white pt-[5%] px-5 md:px-12 overflow-hidden"
+    class="h-full flex flex-col justify-between bg-white pt-[5%] px-5 md:px-12 overflow-x-hidden"
   >
     <Circles />
     <img
@@ -20,9 +20,7 @@ import SplitLayout from "../layouts/SplitLayout.astro";
       <Circles />
     </div>
     <div class="mt-3">
-      <div class="font-bold text-3xl tall:md:text-5xl mb-7 flex">
-        <div class="text-pink mr-3">()</div>About
-      </div>
+      <div class="font-bold text-3xl tall:md:text-5xl mb-7">() About</div>
       <p class="w-full tall:md:w-2/3 text-sm tall:lg:text-lg">
         A humble pleb passionate about building beautiful UXs for the internet.
         With more than 2 years' experience building frontends for distributed

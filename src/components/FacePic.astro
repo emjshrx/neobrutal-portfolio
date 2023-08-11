@@ -8,7 +8,7 @@
   <img
     draggable="false"
     src="/face/eye_mono.png"
-    class="absolute transition-transform ease-out -translate-x-[21%]"
+    class="absolute transition-transform ease-out -translate-x-[21%] -translate-y-[1%]"
     id="leftEye"
   />
   <img draggable="false" src="/face/neck_2_di.png" class="absolute" />
@@ -49,7 +49,7 @@
     face.style.transform = `rotate(${outDeg / 10}deg)`;
 
     let x = (event.clientX * 6) / window.innerWidth ?? 0;
-    let y = (event.clientY * 2) / window.innerHeight - 1 ?? 0;
+    let y = (event.clientY * 2) / window.innerHeight - 1 ?? 3;
     if (x > 4.6) {
       x = 6;
     } else {
@@ -60,6 +60,6 @@
     }
     rightEye.style.transform = "translate(" + x + "% , " + y + "%)";
     leftEye.style.transform =
-      "translate(" + (x - 21) + "% , " + (y - 1.5) + "%)";
+      "translate(" + (x - 21) + "% , " + (y - 1.6) + "%)";
   };
 </script>

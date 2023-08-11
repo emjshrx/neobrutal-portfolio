@@ -13,9 +13,9 @@ allPosts.forEach((post) =>
 ---
 
 <Layout title={title} currentPage={"Blog"}>
-  <div class="lg:flex h-full">
+  <div class="lg:flex h-[calc(100vh-5rem)]">
     <div
-      class=`h-[90vh] lg:h-full lg:w-1/5 bg-black p-4 lg:block ${!isIndex? " hidden":""}`
+      class=`h-full lg:w-1/5 bg-black p-4 lg:block ${!isIndex? " hidden":""}`
     >
       <div class="text-white text-center w-full text-3xl">Index</div>
       <ul class="mt-4">

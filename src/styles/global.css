@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Sudo Var";
+  src: url("/fonts/SudoVariable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-family: "Sudo Var", sans-serif;
+}
+
+.shadow-hard {
+  box-shadow: 2px 4px 0px 0px #000000;
+}
+.shadow-hard-2 {
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+@keyframes rotating {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+.circletext {
+  animation: rotating 10s infinite;
+  animation-timing-function: linear;
+}
+
+.background-texture {
+  background-image: url(/texture.svg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  /*IE10*/
+  -ms-user-select: none;
+  user-select: none;
+
+  /*You just need this if you are only concerned with android and not desktop browsers.*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.wave {
+  animation: wave 1s infinite;
+}
+
+.block_text {
+  font-family: "Sudo Var";
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+  --x-offset: 0.1em;
+  --y-offset: 0.05em;
+  --stroke: 0.025em;
+  --background-color: #e9eddf;
+  --stroke-color: #333532;
+
+  text-shadow: 1px -1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color),
+    -1px -1px 0 var(--stroke-color), -1px 1px 0 var(--stroke-color),
+    var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke))
+      calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+  letter-spacing: 0.05em;
+}
+.invert_child:hover > img {
+  filter: invert();
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(-2%);
+    transform-origin: center;
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: rotate(0);
+    transform-origin: left;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

@@ -1,27 +1,14 @@
 ---
-type ProjectType = {
-  name: string;
-  description: string;
-  html_url: string;
-};
-import Projects from "../components/Projects";
 import Circles from "../components/intro/circles.astro";
-// import { projectsList } from "../constants/devConstants";
+import { projectsList } from "../projectList";
 import Layout from "../layouts/Layout.astro";
-const projectsResponse = await fetch(
-  "https://api.github.com/users/emjshrx/repos"
-);
-let projectsList = (await projectsResponse.json()) as ProjectType[];
-const blockList = ["Tokal", "emjshrx.github.io"];
-projectsList = projectsList.filter(
-  (project) => !blockList.includes(project.name)
-);
+import ProjectsGrid from "../components/ProjectsGrid";
 ---
 
 <Layout title="Emil's Projects" currentPage="Projects">
   <main class="bg-white h-full">
     <div class="flex justify-center items-center h-full">
-      <Projects projectsList={projectsList} />
+      <ProjectsGrid projectsList={projectsList} />
     </div>
     <div class="absolute top-[15%] lg:top-[10%] left-5"><Circles /></div>
     <div class="absolute top-[25%] lg:top-[20%] -right-5 -rotate-90 z-10">

@@ -64,6 +64,15 @@
           }`}>About</a
         >
         <a
+          transition:fly={{ y: -10, duration: 100, delay: 50 }}
+          href="/blog"
+          class={`text-center text-2xl p-2 border-b border-x z-10 ${
+            currentPage == "Blog"
+              ? "border-black bg-black text-white"
+              : "bg-green"
+          }`}>Blog</a
+        >
+        <a
           in:fly={{ y: -10, duration: 100, delay: 100 }}
           out:fly={{ y: -10, duration: 100, delay: 0 }}
           href="/projects"

@@ -1,0 +1,38 @@
+---
+import Layout from "./Layout.astro";
+import "../styles/blog.css";
+import type { MarkdownInstance } from "astro";
+const { title } = Astro.props;
+const allPosts = await Astro.glob("../pages/blog/*.md");
+const allPostsMap: Record<string, MarkdownInstance<Record<string, any>>[]> = {};
+allPosts.forEach((post) =>
+  allPostsMap[post.frontmatter.header]
+    ? allPostsMap[post.frontmatter.header].push(post)
+    : (allPostsMap[post.frontmatter.header] = [post])
+);
+---
+
+<Layout title={title} currentPage={"Blog"}>
+  <div class="lg:flex h-full">
+    <div class="h-[90vh] lg:h-full lg:w-1/5 bg-black p-4">
+      <div class="text-white text-center w-full text-3xl">Index</div>
+      <ul class="mt-4">
+        {
+          Object.keys(allPostsMap).map((header) => (
+            <li class="text-white  mb-4">
+              <div>{header}</div>
+              <div class="text-green ml-3 flex flex-col">
+                {allPostsMap[header].map((post, index) => (
+                  <a href={post.url} class="hover:text-pink">{`${index + 1}. ${
+                    post.frontmatter.title
+                  }`}</a>
+                ))}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="h-screen lg:h-full lg:w-4/5 p-4"><slot /></div>
+  </div>
+</Layout>

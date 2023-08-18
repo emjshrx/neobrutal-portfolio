@@ -6,7 +6,7 @@ const { title, currentPage } = Astro.props;
 
 <Layout title={title} currentPage={currentPage}>
   <div class="lg:flex h-full">
-    <div class="min-h-[90vh] lg:h-full lg:w-3/5">
+    <div class="min-h-[85vh] lg:h-full lg:w-3/5">
       <slot name="Left Content" />
     </div>
     <div class="h-screen lg:h-full lg:w-2/5"><slot name="Right Content" /></div>

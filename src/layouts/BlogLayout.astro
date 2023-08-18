@@ -25,9 +25,9 @@ allPosts.forEach((post) =>
               <div>{header}</div>
               <div class="text-green ml-3 flex flex-col">
                 {allPostsMap[header].map((post, index) => (
-                  <a href={post.url} class="hover:text-pink">{`${index + 1}. ${
-                    post.frontmatter.title
-                  }`}</a>
+                  <a href={post.url} class="hover:text-pink" id="links">{`${
+                    index + 1
+                  }. ${post.frontmatter.title}`}</a>
                 ))}
               </div>
             </li>

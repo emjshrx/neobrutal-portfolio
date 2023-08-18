@@ -8,3 +8,9 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
     <Loading />Click on a post to begin reading!
   </div>
 </BlogLayout>
+
+<script>
+  if (document.body.clientWidth > 1024) {
+    document.getElementById("links")?.click();
+  }
+</script>

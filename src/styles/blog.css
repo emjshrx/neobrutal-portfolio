@@ -1,5 +1,90 @@
+img {
+	max-width: 75%;
+	margin: auto;
+}
 
- h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-  }
+table {
+	width: 100%;
+}
+
+table, th, td {
+	padding: 5px;
+}
+
+body {
+	line-height: 1.4;
+	text-align: justify;
+	}
+article {
+	margin-top: 4em;
+	margin-bottom: 4em;
+	min-height: 400px;
+	}
+video {
+	margin: 2em 0;
+	border:1px solid #ddd;
+	}
+
+/* Typography
+-------------------------------------------------------- */
+
+h1 {
+	margin-top: 0;
+	font-weight: normal;
+  font-size: 2.5rem;
+	}
+h2 {
+	font-weight: normal;
+	}
+h3 {
+	font-weight: normal;
+	font-style: italic;
+	margin-top:3em;
+	}
+p {
+	margin-top:1rem;
+	-webkit-hypens:auto;
+	-moz-hypens:auto;
+	hyphens:auto;
+	}
+ul {
+	list-style: square;
+	padding-left:1.2em;
+	}
+ol {
+	margin:auto;
+	list-style: decimal;
+	padding-left:1.2em;
+	}
+
+li {
+	width: max-content;
+	text-align: center;
+}
+blockquote {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
+	}
+code {
+	font-size: .9em;
+	}
+h1 a, h1 a:hover {
+	color: #333;
+	text-decoration: none;
+	}
+hr {
+	height : 1px;
+	margin: 2em 0;
+	border-top : solid 1px #ddd;
+	border-bottom : none;
+	border-left: 0;
+	border-right: 0;
+	}
+p#heart{
+	font-size: 2em;
+	line-height: 1;
+	text-align: center;
+	}
+
+

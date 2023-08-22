@@ -36,7 +36,8 @@ allPosts.forEach((post) =>
       </ul>
     </div>
     <div
-      class=`h-screen lg:h-full lg:w-4/5 p-4 lg:block ${isIndex? " hidden":""}`
+      class=`h-screen lg:h-full lg:w-4/5 p-4 lg:block overflow-y-auto ${isIndex? " hidden":""}`
+      id="article"
     >
       <slot />
     </div>

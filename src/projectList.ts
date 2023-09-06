@@ -8,6 +8,15 @@ export type ProjectType = {
 
 export const projectsList: ProjectType[] = [
   {
+    name: "EttaWalletSP",
+    description: "Fork of Etta Wallet designed for Silent Payments",
+    html_url:
+      "https://github.com/Bitshala-Incubator/EttaWalletSP/commits?author=emjshrx",
+    contributor: true,
+    imageUrl:
+      "https://github.com/EttaWallet/EttaWallet/raw/next/etta-preview.png",
+  },
+  {
     name: "bcoin",
     description: "Javascript bitcoin library for node.js and browsers",
     html_url: "https://github.com/bcoin-org/bcoin/commits?author=emjshrx",

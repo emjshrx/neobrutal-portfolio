@@ -32,20 +32,18 @@ export const projectsList: ProjectType[] = [
     imageUrl: "https://avatars.githubusercontent.com/u/109231991?s=200&v=4",
   },
   {
-    name: "neobrutal-portfolio",
+    name: "Bitshala Website V2",
+    description: "The revamped Bitshala website for FOSS Bitcoin Education",
+    html_url: "https://github.com/Bitshala/website-v2/commits?author=emjshrx",
+    contributor: true,
+    imageUrl: "https://avatars.githubusercontent.com/u/109231991?s=200&v=4",
+  },
+  {
+    name: "Neobrutal-portfolio",
     description: "Portfolio in the style of neo-brutalism",
     html_url: "https://github.com/emjshrx/neobrutal-portfolio",
     contributor: false,
     imageUrl:
       "https://raw.githubusercontent.com/emjshrx/neobrutal-portfolio/main/img/thumbnail.png",
-  },
-  {
-    name: "central-nft-cli",
-    description:
-      "A centralised server to store NFTs instead of the expensive blockchain while still maintain ownership with Public/Private keys.",
-    html_url: "https://github.com/emjshrx/central-nft-cli",
-    contributor: false,
-    imageUrl:
-      "https://raw.githubusercontent.com/emjshrx/central-nft-cli/main/img/thumbnail.png",
   },
 ];

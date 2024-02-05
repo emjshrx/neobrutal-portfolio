@@ -1,4 +1,4 @@
-# Emil's Portfolio: Neo-brutal Design
+# Emjshrx's Portfolio: Neo-brutal Design
 
 <img src="./img/thumbnail.png" width="987" height="500">
 

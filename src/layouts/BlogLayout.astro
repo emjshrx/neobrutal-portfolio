@@ -36,10 +36,10 @@ allPosts.forEach((post) =>
       </ul>
     </div>
     <div
-      class=`h-full lg:w-4/5 p-4 lg:block overflow-y-auto ${isIndex? " hidden":""}`
+      class=`h-full lg:w-4/5 lg:block overflow-y-auto bg-green bg-opacity-60 ${isIndex? " hidden":""}`
       id="article"
     >
-      <slot />
+      <div class="max-w-3xl m-auto bg-white p-6"><slot /></div>
     </div>
   </div>
 </Layout>

@@ -8,6 +8,14 @@ export type ProjectType = {
 
 export const projectsList: ProjectType[] = [
   {
+    name: "Silent-Pay",
+    description: "A wallet library for silent payments",
+    html_url:
+      "https://github.com/Bitshala-Incubator/silent-pay/commits?author=emjshrx",
+    contributor: true,
+    imageUrl: "https://avatars.githubusercontent.com/u/109231991?s=200&v=4",
+  },
+  {
     name: "EttaWalletSP",
     description: "Fork of Etta Wallet designed for Silent Payments",
     html_url:
@@ -22,14 +30,6 @@ export const projectsList: ProjectType[] = [
     html_url: "https://github.com/bcoin-org/bcoin/commits?author=emjshrx",
     contributor: true,
     imageUrl: "https://avatars.githubusercontent.com/u/17676391?s=200&v=4",
-  },
-  {
-    name: "LBTCL-Cohort",
-    description:
-      "A cooperative study group for Learning Bitcoin From Command Line",
-    html_url: "https://github.com/Bitshala/LBTCL-Cohort/commits?author=emjshrx",
-    contributor: true,
-    imageUrl: "https://avatars.githubusercontent.com/u/109231991?s=200&v=4",
   },
   {
     name: "Bitshala Website V2",

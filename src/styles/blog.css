@@ -39,12 +39,13 @@ h1 {
 h2 {
   font-weight: normal;
   font-size: 2rem;
+  margin-top: 3em;
 }
 h3 {
   font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 p {
   margin-top: 1rem;
@@ -62,10 +63,6 @@ ol {
   padding-left: 1.2em;
 }
 
-li {
-  width: max-content;
-  text-align: center;
-}
 blockquote {
   width: 75%;
   margin: auto;
@@ -74,14 +71,12 @@ blockquote {
   background-color: #e9eddf;
   padding: 0.5rem;
   box-shadow: 2px 4px 0px 0px #000000;
+  margin-top: 1em;
 }
 blockquote > p {
   margin: 0;
 }
-code {
-  font-size: 0.9em;
-  text-align: center;
-}
+
 h1 a,
 h1 a:hover {
   color: #333;
@@ -105,9 +100,15 @@ pre {
   padding: 1rem;
 }
 p > a {
-  color: blue;
+  color: #0000ee;
 }
+
+p > a:hover {
+  text-decoration: underline;
+}
+
 code {
+  text-align: center;
   background-color: #0d1117;
   color: #ddd;
   font-size: 0.8rem;

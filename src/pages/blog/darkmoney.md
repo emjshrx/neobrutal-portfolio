@@ -8,13 +8,13 @@ header: "Bitcoin"
 
 > The strongest force against tyranny is a libertarian who can code.
 
-We have all heard several discussions as to why Bitcoin is sound money. They mostly involve Austrian Economics, Bitcoin's fixed money supply and decentralised ledger. But Bitcoin as the currency of the dark net is rarely discussed. It is often just shrugged away as yes criminals will use them, but it shouldnt be regulated. Do Bitcoin developers need to build technolgy to help those breaking the law?
+Hitting ATH and having the ETFs approved have sparked several discussions as to why Bitcoin is sound money. The arguments mostly involve Austrian Economics, Bitcoin's fixed money supply and decentralised ledger. But Bitcoin as the currency of the dark net is rarely discussed. It is often just shrugged away as yes criminals will use them, but it shouldnt be regulated. Do Bitcoin developers need to build technolgy to help those breaking the law?
 
-All of us will have varying opinions as to what should and shouldnt be done by the government. Even among libertarians there is a vast spectrum of opinions as to what should come as collective decisions and what is individual responsibilty. A criminal is someone who commits a crime and when even the act of saving for the future becomes classified as a crime, shouldnt the we developers build to help the criminals?
+All of us will have varying opinions as to what should and shouldnt be done by the government. Even among libertarians there is a vast spectrum of opinions as to what should come as collective decisions and what is individual responsibilty. BUt no matter your political opinions Bitcoin would have been use to fund the other side. Around the world there are several countries now where even the act of saving for the future becomes classified as a crime, shouldnt the we developers build to help the criminals?
 
 ![Gold Ban](../../../public/blog/darkmoney/gold-ban.png)
 
-Gold was, for many many centuries up until 1933, a typically “uncorrelated financial asset with some disinflationary features” that people in the United States and elsewhere could invest in. But then came Executive Order 6102. Gold was confiscated all across the nation, and all the investors who didn’t protect their privacy (which was especially hard with “paper gold,” kept in custody by trusted third parties eager to comply with the order, but also pretty hard with actual physical gold, difficult to hide in large amounts or to smuggle across a border) had to give it to the government.
+Gold was, for many many centuries up until 1933, a typically “financial asset with some disinflationary features” that people could invest in. But then came Executive Order 6102. Gold was confiscated all across the nation in United States, and all the investors who didn’t protect their privacy (which was especially hard with “paper gold,” kept in custody by trusted third parties, but also pretty hard with actual physical gold, difficult to hide in large amounts or to smuggle across a border) had to give it to the government.
 
 ## Poor Privacy in Bitcoin
 
@@ -24,34 +24,34 @@ Satoshi himself has discussed that privacy is not a given in an open public ledg
 
 But the Bitcoin ecosystem is not perfect.
 
-- Most of Bitcoin is still held in exchanges.
+- A lot of Bitcoin (2.5M) is still held in exchanges and third party custody.
 - Even if they leave the exchanges they are KYCed
-- Even though there is no address reuse, the storage and privacy of xpubs are not done well. While using light clients these can be exposed to upstream servers.
 - Deposit and withdrawal addresses are static in exchanges and this can be correlated easily with the exchange
+- Even though there is less address reuse, the storage and privacy of xpubs are not done well. While using light clients these can be exposed to upstream servers.
 - Making donations to entities without regime support are politically risky
 - Chain analysis is still possible to predict the owners of coins with high proability (enough to convict users in legal systems)
 
 ## Why we need Privacy anyway?
 
-The arguments for privacy in Bitcoin can be broadly split into 3 -
+Bitcoin as hard unstoppable money should be enough right? Hasnt Bitcoin reached escape velocity and now we just wait for number go up? The arguments for privacy in Bitcoin can be broadly split into 3 -
 
 ### Bitcoin was designed for privacy
 
 ![Section on Privacy in Bitcoin Whitepaper](../../../public/blog/darkmoney/privacy-in-whitepaper.png)
 
-As evident from the whitepaper, Satoshi Nakamoto and the other cypherpunk creators of Bitcoin wanted it to be a network for anonyomous or atleast pseudonymous transactions. We cannot rely on the buyers or merchants to respects privacy, as that would go against the freedom of speech. The only way to maintain privacy is by revealing as less information as possible, which would mean that the payment method itself should never contain personal data. This is only possible with a monetary network thats completely separate from the real world identities.
+As evident from the [whitepaper](https://bitcoin.org/bitcoin.pdf), Satoshi Nakamoto and the other cypherpunk creators of Bitcoin wanted it to be a network for anonyomous or atleast pseudonymous transactions. We cannot rely on the buyers or merchants to respects privacy, as that would go against the freedom of speech. The only way to maintain privacy is by revealing as less information as possible, which would mean that the payment method itself should never contain personal data. This is only possible with a monetary network thats completely separate from the real world identities.
 
 ### Privacy is good for the individual
 
 ![Known Physical attacks for Bitcoin](../../../public/blog/darkmoney/known-attacks.png)
 
-Although the list of physical attacks for bitcoin isnt a long list its a significant list. As the price increases it becomes more and more profitable to violently take someone's key than to earn it. This is why Deniabilty is crucial for a private network. This is more true for political rent-seekers (tax, excise, bribes, etc), since its more efficient to rob known high net worth individuals from their KYC list than to monitor and tax normal everyday simple transactions. To maintain this deniabilty it is paramount for the users to detach their personal identities from their transactions.
+Although the [list of physical attacks for bitcoin](https://github.com/jlopp/physical-bitcoin-attacks) isnt a long list (about 150 attacks) its a significant list. As the price increases it becomes more and more profitable to violently take someone's key than to earn it. This is why Deniabilty is crucial for a private network. This is more true for political rent-seekers (tax, excise, bribes, etc), since its more efficient to rob known high net worth individuals from their KYC list than to monitor and tax normal everyday simple transactions. To maintain this deniabilty it is paramount for the users to detach their personal identities from their transactions.
 
 ### Privacy is good for the entire network
 
 ![Bitcoin Fog News](../../../public/blog/darkmoney/bitcoin-fog.png)
 
-The possibility for an individual receiving a monetary tool to safely ignore any connection between that tool and any particular individual or use case it interacted with in the past can be termed as fungibility. Any random amount should be indistinguishable from any other. This is important for the verification cost as if a merchant or individual had to verify the entire chain against a blacklist it would mean very expensive transactions.
+The possibility for an individual receiving a monetary tool to safely ignore any connection between that tool and any particular individual or use case it interacted with in the past can be termed as fungibility. Any random amount should be indistinguishable from any other. This is important for the verification cost as if a merchant or individual had to verify the entire chain against a blacklist it would mean very expensive transactions. In the [case of Bitcoin Fog](https://cointelegraph.com/news/bad-blockchain-forensics-convict-roman-sterlingov), Roman Sterlingov was convicted even though there was no exact proof that he was involved but based on probabiltisic chain analysis.
 
 Non-fungible goods cannot work as money. This is a major threat due to the current (almost ubiquitous) KYC regulations around the world. Idealogy apart, functionally a monetary good cannot exist if every hand it passed through had to verify the political status of every previous hand to accurately gauge that amount's political risk. Although there are other attacks on Bitcoin's fungibilty (ordinals), erosion of privacy is the one with most damning potential.
 
@@ -59,11 +59,11 @@ Non-fungible goods cannot work as money. This is a major threat due to the curre
 
 > ... fiat-to-bitcoin bridges will almost always end up demanding a scary amount of personal information from their user, linking that information to a few deposit and withdrawal addresses (often incentivizing continuous reuse).
 
-Silent payments is a new approach to reusable payment codes, which remove the need for a notification transaction entirely by leveraging the outputs in a transaction to signal to the recipient when funds are intended for them. This can make address sharing easier with a static SP(silent payments) address, that transforms to different addresses for each payment. It will not need complex XPUB management tools, to permenantly stop address reuse. Also it can make chain analysis very difficult by never revealing who the receiver is, even if the receiver's SP address is publicly known. The main limitations to SP is the large compute needed to scan if we have received a new payment or not but this is a technical problem and can be optimized.
+Silent Payments (SP) is a new approach to reusable payment codes, which remove the need for a notification transaction entirely by leveraging the outputs in a transaction to signal to the recipient when funds are intended for them. This can make address sharing easier with a static SP address, that transforms to different addresses for each payment. It will not need complex XPUB management tools, to permenantly stop address reuse. Also it can make chain analysis very difficult by never revealing who the receiver is, even if the receiver's SP address is publicly known. The main limitations to SP is the large compute needed to scan if we have received a new payment or not but this is a technical problem and can be optimized.
 
 ![Over-simplified diagram of Silent Payments](../../../public/blog/darkmoney/sp.png)
 
-Privacy tech such as SP, coin swap, coin join, pay join to name a few are crucial to maintaining privacy in Bitcoin's ecosystem and hence due to the above mentioned 3 reasons, the success of bitcoin itself.
+SP is by no means a silver bullet against all of Bitcoin's Privacy issues but a protocol improvement that is close to my heart for being an unstoppable step in the right direction. There are many other Privacy tech such as coin swap, coin join, pay join to name a few are crucial to maintaining privacy in Bitcoin's ecosystem and hence due to the above mentioned 3 reasons, the success of bitcoin itself.
 
 ## Cypherpunk and Crypto-anarchism
 

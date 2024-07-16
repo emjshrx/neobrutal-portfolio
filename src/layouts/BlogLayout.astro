@@ -1,6 +1,5 @@
 ---
 import Layout from "./Layout.astro";
-import "../styles/blog.css";
 import type { MarkdownInstance } from "astro";
 const { title, isIndex, frontmatter } = Astro.props;
 const allPosts = await Astro.glob("../pages/blog/*.md");

@@ -8,9 +8,9 @@ header: "Bitcoin"
 
 > The strongest force against tyranny is a libertarian who can code.
 
-Hitting ATH and having the ETFs approved have sparked several discussions as to why Bitcoin is sound money. The arguments mostly involve Austrian Economics, Bitcoin's fixed money supply and decentralised ledger. But Bitcoin as the currency of the dark net is rarely discussed. It is often just shrugged away as yes criminals will use them, but it shouldn't be regulated. Do Bitcoin developers need to build technology to help those breaking the law?
+Hitting ATH, ETFs approved and talks of Bitcoin Strategic Reserves have sparked several discussions as to why Bitcoin is sound money. The arguments mostly involve Austrian Economics, Bitcoin's fixed money supply and decentralised ledger. But Bitcoin as the currency of the dark net is rarely discussed. It is often just shrugged away as yes criminals will use them, but it shouldn't be regulated. Do Bitcoin developers need to build technology to help those breaking the law?
 
-All of us will have varying opinions as to what should and shouldn't be done by the government. Even among libertarians, there is a vast spectrum of opinions as to what should come as collective decisions and what is individual responsibility. But no matter your political opinions Bitcoin would have been used to fund the other side. Around the world there are several countries now where even the act of saving for the future becomes classified as a crime, Shouldn't we developers build to help the criminals?
+Legality is not morality. All of us will have varying opinions as to what should and shouldn't be done by the government. Even among libertarians, there is a vast spectrum of opinions as to what should come as collective decisions and what is individual responsibility. But no matter your political opinions Bitcoin would have been used to fund the other side. Around the world there are several countries now where even the act of saving for the future becomes classified as a crime, Shouldn't we developers build to help the criminals?
 
 ![Gold Ban](../../../blog/darkmoney/gold-ban.png)
 

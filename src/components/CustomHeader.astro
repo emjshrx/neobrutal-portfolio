@@ -20,11 +20,19 @@ const generateLinkStyles = (page: string) =>
     <a href="/blog/" class={generateLinkStyles("Blog")}>Blog</a>
     <a href="/projects" class={generateLinkStyles("Projects")}>Projects</a>
   </nav>
-  <a
-    class="hidden md:block text-2xl border-black border-2 rounded-2xl px-2 py-1 shadow-hard font-thin cursor-pointer hover:bg-black hover:text-white"
-    href="mailTo:emjshrx@gmail.com"
-  >
-    Let's talk
-  </a>
+  <div class="hidden md:flex items-center gap-3">
+    <a
+      class="text-2xl border-black border-2 rounded-2xl px-2 py-1 shadow-hard font-thin cursor-pointer hover:bg-[#f7931a] hover:text-white hover:border-[#f7931a] transition-colors"
+      href="aqua:lightning:emjshrx@aqua.net"
+    >
+      Pay
+    </a>
+    <a
+      class="text-2xl border-black border-2 rounded-2xl px-2 py-1 shadow-hard font-thin cursor-pointer hover:bg-black hover:text-white"
+      href="mailTo:emjshrx@gmail.com"
+    >
+      Let's talk
+    </a>
+  </div>
   <Hamburger client:visible currentPage={currentPage} />
 </header>

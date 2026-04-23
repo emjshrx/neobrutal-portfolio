@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Lightning" currentPage="">
+  <main class="bg-white h-full flex items-center justify-center">
+    <div
+      class="border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-yellow p-8 flex flex-col gap-6 w-full max-w-md"
+    >
+      <h1 class="text-2xl font-bold text-center">AQUA Lightning</h1>
+      <input
+        id="lightning-input"
+        type="text"
+        placeholder="Enter value..."
+        class="border-2 border-black rounded-md px-4 py-2 text-lg outline-none focus:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-shadow"
+      />
+      <a
+        id="lightning-link"
+        href="aqua:lightning:"
+        class="text-center border-2 border-black rounded-md px-4 py-3 bg-green font-bold text-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+      >
+        Open
+      </a>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const input = document.getElementById("lightning-input") as HTMLInputElement;
+  const link = document.getElementById("lightning-link") as HTMLAnchorElement;
+
+  input.addEventListener("input", () => {
+    link.href = `aqua:lightning:${input.value}`;
+  });
+</script>

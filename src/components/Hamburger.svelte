@@ -76,18 +76,12 @@
           in:fly={{ y: -10, duration: 100, delay: 100 }}
           out:fly={{ y: -10, duration: 100, delay: 0 }}
           href="/projects"
-          class={`text-center text-2xl p-2 border-b border-x z-0 ${
+          class={`text-center text-2xl p-2 border-b  border-x rounded-b-lg z-0 ${
             currentPage == "Projects"
               ? "border-black bg-black text-white"
               : "bg-green"
           }`}>Projects</a
         >
-        <a
-          in:fly={{ y: -10, duration: 100, delay: 150 }}
-          out:fly={{ y: -10, duration: 100, delay: 0 }}
-          href="aqua:lightning:emjshrx@aqua.net"
-          class="text-center text-2xl p-2 border-b border-x rounded-b-lg z-0 bg-[#f7931a] text-white"
-        >Pay</a>
       </div>
     {/if}
   </nav>

@@ -2,6 +2,7 @@
 layout: "../../layouts/BlogLayout.astro"
 title: "Why JSDOM?"
 header: "Javascript"
+description: "You haven't truly learned something until you have re-implemented it in Javascript."
 ---
 
 # The JSDOM Rabbit Hole

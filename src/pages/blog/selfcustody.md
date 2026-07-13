@@ -2,6 +2,8 @@
 layout: "../../layouts/BlogLayout.astro"
 title: "Self Custody"
 header: "Bitcoin"
+description: "Not your keys, not your coins! A guide to taking full ownership of your Bitcoin."
+image: "/blog/selfcustody/goldvbtc.webp"
 ---
 
 # Get Your Bitcoin Out of the Exchange!

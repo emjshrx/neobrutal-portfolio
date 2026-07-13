@@ -2,6 +2,8 @@
 layout: "../../layouts/BlogLayout.astro"
 title: "Why Liquid?"
 header: "Bitcoin"
+description: "Bitcoin is digital gold. Liquid gives you supercharged rails to build on it."
+image: "/blog/why-liquid/liquid.png"
 ---
 
 # Why Build on Liquid?

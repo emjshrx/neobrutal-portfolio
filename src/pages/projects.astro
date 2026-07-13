@@ -5,7 +5,11 @@ import Layout from "../layouts/Layout.astro";
 import ProjectsGrid from "../components/ProjectsGrid";
 ---
 
-<Layout title="Emjshrx's Projects" currentPage="Projects">
+<Layout
+  title="Emjshrx's Projects"
+  currentPage="Projects"
+  description="Open-source projects and contributions in Bitcoin, JavaScript, and web development."
+>
   <main class="bg-white h-full">
     <div class="flex justify-center items-center h-full">
       <ProjectsGrid projectsList={projectsList} />

@@ -2,6 +2,7 @@
 layout: "../../layouts/BlogLayout.astro"
 title: "Guide: Build a Node"
 header: "Bitcoin"
+description: "A guide to building your own hardened Bitcoin node with best privacy practices."
 ---
 # Build your own hardened Bitcoin node
 

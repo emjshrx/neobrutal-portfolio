@@ -2,6 +2,7 @@
 layout: "../../layouts/BlogLayout.astro"
 title: "Dark Money"
 header: "Bitcoin"
+description: "The strongest force against tyranny is a libertarian who can code."
 ---
 
 # Cypherpunks Write Code

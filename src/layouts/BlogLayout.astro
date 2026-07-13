@@ -11,7 +11,16 @@ allPosts.forEach((post) =>
 );
 ---
 
-<Layout title={frontmatter?.title ?? title} currentPage={"Blog"}>
+<Layout
+  title={frontmatter?.title ?? title}
+  currentPage={"Blog"}
+  description={
+    frontmatter?.description ??
+    "Essays on Bitcoin, JavaScript, and building on the open web by Emjshrx."
+  }
+  image={frontmatter?.image}
+  type={isIndex ? "website" : "article"}
+>
   <div class="lg:flex h-[calc(100vh-5rem)]">
     <div
       class=`h-full lg:w-1/5 bg-black p-4 lg:block ${!isIndex? " hidden":""}`

@@ -1,0 +1,247 @@
+.learn-content {
+  --muted: #5c5c5c;
+  --correct: #2d6a4f;
+  --correct-bg: #d8f3dc;
+  --wrong: #9b2226;
+  --wrong-bg: #fde8e8;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+.learn-content h1,
+.learn-content h2,
+.learn-content h3 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.learn-content h1 {
+  font-size: 2.25rem;
+  margin-top: 0;
+  border-bottom: 2px solid #333532;
+  padding-bottom: 0.5rem;
+}
+
+.learn-content h2 {
+  font-size: 1.65rem;
+}
+
+.learn-content h3 {
+  font-size: 1.35rem;
+}
+
+.learn-content p {
+  margin: 0.75rem 0;
+}
+
+.learn-content a {
+  color: #db2777;
+  text-decoration: underline;
+}
+
+.learn-content a:hover {
+  opacity: 0.75;
+}
+
+.learn-content .meta {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.learn-content .lead {
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.learn-content nav.lesson-nav {
+  font-size: 1rem;
+  background: #e9eddf;
+  border: 2px solid #333532;
+  box-shadow: 2px 4px 0px 0px #000000;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+}
+
+.learn-content nav.lesson-nav ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.learn-content nav.lesson-nav strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.learn-content nav.lesson-nav a {
+  color: #db2777;
+}
+
+.learn-content figure {
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.learn-content figcaption {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.learn-content .state-diagram {
+  font-size: 0.85rem;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.learn-content .callout {
+  background: #fff;
+  border: 2px solid #333532;
+  box-shadow: 2px 4px 0px 0px #000000;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.learn-content .callout strong {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #db2777;
+  margin-bottom: 0.35rem;
+}
+
+.learn-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin: 1rem 0;
+  border: 2px solid #333532;
+}
+
+.learn-content th,
+.learn-content td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #333532;
+}
+
+.learn-content th {
+  font-weight: 600;
+  background: #e9eddf;
+}
+
+.learn-content dl {
+  margin: 0;
+}
+
+.learn-content dt {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-top: 1.25rem;
+}
+
+.learn-content dd {
+  margin: 0.25rem 0 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.learn-content .tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: #e9eddf;
+  border: 1px solid #333532;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+.learn-content .quiz {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  background: #fff;
+  border: 2px solid #333532;
+  box-shadow: 2px 4px 0px 0px #000000;
+}
+
+.learn-content .quiz h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.learn-content .quiz .question {
+  margin: 1.25rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.learn-content .quiz .options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.learn-content .quiz button.option {
+  text-align: left;
+  padding: 0.65rem 0.9rem;
+  border: 2px solid #333532;
+  background: #fff;
+  box-shadow: 2px 4px 0px 0px #000000;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.learn-content .quiz button.option:hover:not(:disabled) {
+  background: #e9eddf;
+}
+
+.learn-content .quiz button.option:active:not(:disabled) {
+  transform: translate(2px, 4px);
+  box-shadow: none;
+}
+
+.learn-content .quiz button.option.correct {
+  background: var(--correct-bg);
+  border-color: var(--correct);
+}
+
+.learn-content .quiz button.option.wrong {
+  background: var(--wrong-bg);
+  border-color: var(--wrong);
+}
+
+.learn-content .quiz .feedback {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  min-height: 1.2rem;
+}
+
+.learn-content .quiz .score {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #333532;
+  font-weight: 600;
+}
+
+.learn-content code {
+  background-color: #0d1117;
+  color: #ddd;
+  font-size: 0.95rem;
+  padding: 0.1rem 0.3rem;
+}
+
+.learn-content ul,
+.learn-content ol {
+  padding-left: 1.25rem;
+}

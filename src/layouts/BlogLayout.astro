@@ -31,7 +31,7 @@ allPosts.forEach((post) =>
           Object.keys(allPostsMap).map((header) => (
             <li class="text-white  mb-4">
               <div>{header}</div>
-              <div class="text-green ml-3 flex flex-col">
+              <div class="text-green ml-3 flex flex-col text-lg">
                 {allPostsMap[header].map((post, index) => (
                   <a href={post.url} class="hover:text-pink" id="links">{`${
                     index + 1
@@ -47,7 +47,7 @@ allPosts.forEach((post) =>
       class=`h-full lg:w-4/5 lg:block overflow-y-auto bg-green bg-opacity-60 ${isIndex? " hidden":""}`
       id="article"
     >
-      <div class="max-w-3xl m-auto bg-white p-6"><slot /></div>
+      <div class="max-w-3xl m-auto bg-white p-6 blog-content"><slot /></div>
     </div>
   </div>
 </Layout>

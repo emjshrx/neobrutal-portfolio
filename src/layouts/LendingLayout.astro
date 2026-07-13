@@ -1,0 +1,73 @@
+---
+import Layout from "./Layout.astro";
+import type { MarkdownInstance } from "astro";
+import "../styles/learn.css";
+import QuizScript from "../components/learn/QuizScript.astro";
+
+const { title, isIndex, frontmatter } = Astro.props;
+const allPages = await Astro.glob("../pages/learn/lending/*.md");
+const headerOrder = ["Overview", "Lessons", "Reference"];
+const allPagesMap: Record<string, MarkdownInstance<Record<string, unknown>>[]> =
+  {};
+
+allPages
+  .sort(
+    (a, b) =>
+      (Number(a.frontmatter.order) || 0) - (Number(b.frontmatter.order) || 0)
+  )
+  .forEach((page) => {
+    const header = String(page.frontmatter.header);
+    allPagesMap[header]
+      ? allPagesMap[header].push(page)
+      : (allPagesMap[header] = [page]);
+  });
+---
+
+<Layout
+  title={frontmatter?.title ?? title}
+  currentPage={"Learn"}
+  description={
+    frontmatter?.description ??
+    "Simplicity Lending Protocol — protocol vocabulary, lifecycle semantics, and wallet integration."
+  }
+  image={frontmatter?.image}
+  type={isIndex ? "website" : "article"}
+>
+  <div class="lg:flex h-[calc(100vh-5rem)] min-h-0">
+    <div
+      class={`min-h-0 h-full lg:w-1/5 bg-black p-4 overflow-y-auto lg:block ${!isIndex ? " hidden" : ""}`}
+    >
+      <a href="/learn/" class="text-green text-sm hover:text-pink block mb-4"
+        >← All topics</a
+      >
+      <div class="text-white text-center w-full text-3xl">Lending</div>
+      <ul class="mt-4">
+        {
+          headerOrder
+            .filter((header) => allPagesMap[header])
+            .map((header) => (
+              <li class="text-white mb-4">
+                <div>{header}</div>
+                <div class="text-green ml-3 flex flex-col text-lg">
+                  {allPagesMap[header].map((page, index) => (
+                    <a href={page.url} class="hover:text-pink" id="links">{`${
+                      index + 1
+                    }. ${page.frontmatter.title}`}</a>
+                  ))}
+                </div>
+              </li>
+            ))
+        }
+      </ul>
+    </div>
+    <div
+      class={`min-h-0 h-full lg:w-4/5 lg:block overflow-y-auto bg-green bg-opacity-60 ${isIndex ? " hidden" : ""}`}
+      id="article"
+    >
+      <div class="max-w-3xl m-auto bg-white p-6 learn-content">
+        <slot />
+        <QuizScript />
+      </div>
+    </div>
+  </div>
+</Layout>

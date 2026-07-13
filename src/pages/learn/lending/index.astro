@@ -1,0 +1,16 @@
+---
+import Loading from "../../../components/Loading.astro";
+import LendingLayout from "../../../layouts/LendingLayout.astro";
+---
+
+<LendingLayout title="Lending" isIndex={true}>
+  <div class="justify-center flex flex-col h-full items-center">
+    <Loading />Click on a lesson to begin learning!
+  </div>
+</LendingLayout>
+
+<script>
+  if (document.body.clientWidth > 1024) {
+    document.getElementById("links")?.click();
+  }
+</script>

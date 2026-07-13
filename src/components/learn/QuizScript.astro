@@ -1,0 +1,46 @@
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    function initQuiz(container) {
+      const questions = container.querySelectorAll(".question-block");
+      let answered = 0;
+      let correct = 0;
+      const scoreEl = container.querySelector(".score");
+
+      questions.forEach((block) => {
+        const answer = parseInt(block.dataset.answer, 10);
+        const feedback = block.querySelector(".feedback");
+        const buttons = block.querySelectorAll("button.option");
+
+        buttons.forEach((btn, idx) => {
+          btn.addEventListener("click", () => {
+            if (block.dataset.done === "1") return;
+            block.dataset.done = "1";
+            answered += 1;
+
+            if (idx === answer) {
+              correct += 1;
+              btn.classList.add("correct");
+              feedback.textContent = "Correct.";
+              feedback.style.color = "var(--correct)";
+            } else {
+              btn.classList.add("wrong");
+              buttons[answer].classList.add("correct");
+              feedback.textContent = "Not quite — see the highlighted answer.";
+              feedback.style.color = "var(--wrong)";
+            }
+
+            buttons.forEach((b) => {
+              b.disabled = true;
+            });
+
+            if (answered === questions.length && scoreEl) {
+              scoreEl.textContent = `You scored ${correct} of ${questions.length}.`;
+            }
+          });
+        });
+      });
+    }
+
+    document.querySelectorAll("[data-quiz]").forEach(initQuiz);
+  });
+</script>

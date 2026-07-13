@@ -61,7 +61,6 @@ duration: "~10 min"
   <section class="quiz" data-quiz>
     <h2>Check your understanding</h2>
     <p style="font-size: 0.85rem; color: var(--muted);">Pick the best answer. Options are equal length on purpose.</p>
-
     <div class="question-block" data-answer="1">
       <p class="question">1. When a lender accepts a pending offer, what happens?</p>
       <div class="options">
@@ -72,7 +71,6 @@ duration: "~10 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="2">
       <p class="question">2. After the lending term expires without repayment, who gets the collateral?</p>
       <div class="options">
@@ -83,7 +81,6 @@ duration: "~10 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="0">
       <p class="question">3. What is the indexer’s main job for lenders?</p>
       <div class="options">
@@ -94,7 +91,6 @@ duration: "~10 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <p class="score"></p>
   </section>
 

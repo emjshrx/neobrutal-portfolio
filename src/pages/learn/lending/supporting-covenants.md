@@ -48,7 +48,7 @@ description: "Small Simplicity programs the main LendingOffer covenant composes 
   <nav class="lesson-nav">
     <strong>Related</strong>
     <ul>
-      <li><a href="/learn/lending/0006-offer-state-and-tx-layout">Lesson 6</a></li>
+      <li><a href="/learn/lending/0005-offer-state-and-tx-layout">Lesson 5</a></li>
       <li><a href="/learn/lending/offer-state-machine">State machine</a></li>
     </ul>
   </nav>

@@ -82,32 +82,23 @@ duration: "~12 min"
         </marker>
       </defs>
       <text x="230" y="18" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600">Per-transaction processing order</text>
-
       <rect x="20" y="35" width="95" height="32" rx="3" fill="#fff" stroke="#999"/>
       <text x="67" y="55" text-anchor="middle" font-size="8" font-family="system-ui">Factory spends</text>
-
       <rect x="130" y="35" width="95" height="32" rx="3" fill="#fff" stroke="#999"/>
       <text x="177" y="55" text-anchor="middle" font-size="8" font-family="system-ui">Auth NFT spends</text>
-
       <rect x="240" y="35" width="95" height="32" rx="3" fill="#fff4dd" stroke="#d4a017"/>
       <text x="287" y="55" text-anchor="middle" font-size="8" font-family="system-ui">Offer UTXO spends</text>
-
       <rect x="350" y="35" width="95" height="32" rx="3" fill="#fff4dd" stroke="#d4a017"/>
       <text x="397" y="55" text-anchor="middle" font-size="8" font-family="system-ui">Participant NFTs</text>
-
       <line x1="115" y1="51" x2="128" y2="51" stroke="#5c5c5c" marker-end="url(#a)"/>
       <line x1="225" y1="51" x2="238" y2="51" stroke="#5c5c5c" marker-end="url(#a)"/>
       <line x1="335" y1="51" x2="348" y2="51" stroke="#5c5c5c" marker-end="url(#a)"/>
-
       <rect x="80" y="100" width="120" height="36" rx="3" fill="#f5ebe3" stroke="#c45c26"/>
       <text x="140" y="122" text-anchor="middle" font-size="8" font-family="system-ui">Factory creation?</text>
-
       <rect x="260" y="100" width="140" height="36" rx="3" fill="#d1fae5" stroke="#10b981"/>
       <text x="330" y="122" text-anchor="middle" font-size="8" font-family="system-ui">Offer creation? (if factory issued)</text>
-
       <line x1="177" y1="67" x2="140" y2="98" stroke="#5c5c5c" stroke-dasharray="3,2" marker-end="url(#a)"/>
       <line x1="287" y1="67" x2="330" y2="98" stroke="#5c5c5c" stroke-dasharray="3,2" marker-end="url(#a)"/>
-
       <text x="230" y="165" text-anchor="middle" font-size="9" fill="#5c5c5c" font-family="system-ui">Spending a tracked UTXO triggers status transition</text>
       <text x="230" y="182" text-anchor="middle" font-size="8" fill="#5c5c5c" font-family="system-ui">pending_offer → active | cancelled · active_offer → repaid | liquidated</text>
     </svg>
@@ -144,7 +135,6 @@ duration: "~12 min"
 
   <section class="quiz" data-quiz>
     <h2>Check your understanding</h2>
-
     <div class="question-block" data-answer="0">
       <p class="question">1. What verifies a new offer creation tx is genuine?</p>
       <div class="options">
@@ -155,7 +145,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="0">
       <p class="question">2. When does the indexer try to index a new offer?</p>
       <div class="options">
@@ -166,7 +155,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="0">
       <p class="question">3. Spending a pending-offer UTXO updates status to?</p>
       <div class="options">
@@ -177,7 +165,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <p class="score"></p>
   </section>
 
@@ -189,7 +176,7 @@ duration: "~12 min"
   <nav class="lesson-nav">
     <strong>Next</strong>
     <ul>
-      <li><a href="/learn/lending/0004-lwk-and-frb">Lesson 4: LWK &amp; FRB</a></li>
+      <li><a href="/learn/lending/0004-simplicity-primitives">Lesson 4: Simplicity primitives</a></li>
       <li><a href="/learn/lending/indexer-api">Reference: indexer API</a></li>
       <li><a href="https://demolending.distributedlab.com/">Live demo</a></li>
     </ul>

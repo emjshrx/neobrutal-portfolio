@@ -80,33 +80,25 @@ duration: "~12 min"
       </defs>
       <rect x="10" y="70" width="100" height="44" rx="4" fill="#fff" stroke="#c45c26" stroke-width="1.5"/>
       <text x="60" y="97" text-anchor="middle" font-size="10" font-family="system-ui">Borrower wallet</text>
-
       <rect x="140" y="50" width="110" height="84" rx="4" fill="#f5ebe3" stroke="#c45c26" stroke-width="1.5"/>
       <text x="195" y="78" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600">IssuanceFactory</text>
       <text x="195" y="94" text-anchor="middle" font-size="8" fill="#5c5c5c" font-family="system-ui">+ auth NFT (1 unit)</text>
       <text x="195" y="118" text-anchor="middle" font-size="8" fill="#5c5c5c" font-family="system-ui">IssueAssets | RemoveFactory</text>
-
       <rect x="290" y="30" width="90" height="36" rx="4" fill="#fff4dd" stroke="#d4a017"/>
       <text x="335" y="52" text-anchor="middle" font-size="9" font-family="system-ui">Borrower NFT</text>
-
       <rect x="290" y="82" width="90" height="36" rx="4" fill="#fff4dd" stroke="#d4a017"/>
       <text x="335" y="104" text-anchor="middle" font-size="9" font-family="system-ui">Lender NFT</text>
-
       <rect x="290" y="134" width="90" height="36" rx="4" fill="#fff4dd" stroke="#d4a017"/>
       <text x="335" y="156" text-anchor="middle" font-size="9" font-family="system-ui">Protocol NFT</text>
-
       <rect x="410" y="70" width="60" height="44" rx="4" fill="#d1fae5" stroke="#10b981"/>
       <text x="440" y="92" text-anchor="middle" font-size="9" font-family="system-ui">Lending</text>
       <text x="440" y="104" text-anchor="middle" font-size="9" font-family="system-ui">offer</text>
-
       <line x1="110" y1="92" x2="138" y2="92" stroke="#5c5c5c" marker-end="url(#arr)"/>
       <text x="120" y="84" font-size="7" fill="#5c5c5c" font-family="system-ui">create once</text>
-
       <line x1="250" y1="78" x2="288" y2="48" stroke="#5c5c5c" marker-end="url(#arr)"/>
       <line x1="250" y1="92" x2="288" y2="100" stroke="#5c5c5c" marker-end="url(#arr)"/>
       <line x1="250" y1="106" x2="288" y2="152" stroke="#5c5c5c" marker-end="url(#arr)"/>
       <text x="258" y="62" font-size="7" fill="#5c5c5c" font-family="system-ui">IssueAssets</text>
-
       <line x1="380" y1="100" x2="408" y2="92" stroke="#5c5c5c" marker-end="url(#arr)"/>
       <text x="386" y="92" font-size="7" fill="#5c5c5c" font-family="system-ui">create offer</text>
     </svg>
@@ -132,7 +124,6 @@ duration: "~12 min"
 
   <section class="quiz" data-quiz>
     <h2>Check your understanding</h2>
-
     <div class="question-block" data-answer="0">
       <p class="question">1. What do parameter tokens carry across covenant spends?</p>
       <div class="options">
@@ -143,7 +134,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="1">
       <p class="question">2. Who typically creates an IssuanceFactory covenant first?</p>
       <div class="options">
@@ -154,7 +144,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="0">
       <p class="question">3. What must a borrower NFT prove during repayment?</p>
       <div class="options">
@@ -165,7 +154,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <p class="score"></p>
   </section>
 
@@ -177,7 +165,7 @@ duration: "~12 min"
   <nav class="lesson-nav">
     <strong>Next</strong>
     <ul>
-      <li><a href="/learn/lending/0006-offer-state-and-tx-layout">Lesson 6: State &amp; tx layout</a></li>
+      <li><a href="/learn/lending/0005-offer-state-and-tx-layout">Lesson 5: State &amp; tx layout</a></li>
       <li><a href="/learn/lending/0003-indexer-and-discovery">Lesson 3: Indexer &amp; discovery</a></li>
       <li><a href="/learn/lending/parameter-encoding">Reference: parameter encoding</a></li>
       <li><a href="/learn/lending/lending-glossary">Glossary</a></li>

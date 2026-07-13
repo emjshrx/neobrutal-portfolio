@@ -58,11 +58,6 @@ description: "Compressed vocabulary for reviewing wallet and indexer code."
     <dt>CMR <span class="tag">crypto</span></dt>
     <dd>Commitment Merkle root — script hash of a Simplicity program. Indexer recompiles covenant from extracted params and compares CMR to output script.</dd>
 
-    <dt>LWK <span class="tag">wallet</span></dt>
-    <dd>Liquid Wallet Kit — Rust toolkit for descriptors, balances, PSET signing. <code>lwk-dart</code> exposes it to Flutter via Flutter Rust Bridge.</dd>
-
-    <dt>FRB <span class="tag">wallet</span></dt>
-    <dd>Flutter Rust Bridge — codegen layer binding Dart to Rust static APIs (<code>api.rs</code>, <code>types.rs</code>).</dd>
   </dl>
 
   <nav class="lesson-nav">
@@ -71,8 +66,7 @@ description: "Compressed vocabulary for reviewing wallet and indexer code."
       <li><a href="/learn/lending/offer-state-machine">Offer state machine</a></li>
       <li><a href="/learn/lending/parameter-encoding">Parameter encoding</a></li>
       <li><a href="/learn/lending/indexer-api">Indexer API reference</a></li>
-      <li><a href="/learn/lending/0004-lwk-and-frb">Lesson 4: LWK &amp; FRB</a></li>
-      <li><a href="/learn/lending/0005-simplicity-primitives">Lesson 5: Simplicity primitives</a></li>
-      <li><a href="/learn/lending/0006-offer-state-and-tx-layout">Lesson 6: Tx layout</a></li>
+      <li><a href="/learn/lending/0004-simplicity-primitives">Lesson 4: Simplicity primitives</a></li>
+      <li><a href="/learn/lending/0005-offer-state-and-tx-layout">Lesson 5: Tx layout</a></li>
     </ul>
   </nav>

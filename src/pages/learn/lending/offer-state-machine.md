@@ -19,41 +19,31 @@ description: "Simplified P2P lending lifecycle — states and transitions."
       <!-- Start -->
       <circle cx="60" cy="40" r="18" fill="none" stroke="#5c5c5c" stroke-width="1.5"/>
       <text x="60" y="44" text-anchor="middle" font-size="11" font-family="system-ui">Start</text>
-
       <!-- Pending -->
       <rect x="130" y="20" width="120" height="44" rx="4" fill="#fff4dd" stroke="#d4a017" stroke-width="1.5"/>
       <text x="190" y="47" text-anchor="middle" font-size="11" font-family="system-ui">Collateral locked</text>
       <text x="190" y="58" text-anchor="middle" font-size="9" fill="#5c5c5c" font-family="system-ui">(pending offer)</text>
-
       <!-- Active -->
       <rect x="300" y="20" width="120" height="44" rx="4" fill="#fff4dd" stroke="#d4a017" stroke-width="1.5"/>
       <text x="360" y="47" text-anchor="middle" font-size="11" font-family="system-ui">Loan active</text>
-
       <!-- Terminal: cancelled -->
       <rect x="80" y="140" width="100" height="40" rx="4" fill="#eee" stroke="#999"/>
       <text x="130" y="165" text-anchor="middle" font-size="10" font-family="system-ui">Cancelled</text>
-
       <!-- Terminal: repaid -->
       <rect x="210" y="140" width="100" height="40" rx="4" fill="#d1fae5" stroke="#10b981"/>
       <text x="260" y="165" text-anchor="middle" font-size="10" font-family="system-ui">Repaid</text>
-
       <!-- Terminal: liquidated -->
       <rect x="340" y="140" width="100" height="40" rx="4" fill="#fee2e2" stroke="#ef4444"/>
       <text x="390" y="165" text-anchor="middle" font-size="10" font-family="system-ui">Liquidated</text>
-
       <!-- Arrows -->
       <line x1="78" y1="40" x2="128" y2="40" stroke="#5c5c5c" marker-end="url(#arrow)"/>
       <text x="100" y="32" font-size="8" fill="#5c5c5c" font-family="system-ui">propose</text>
-
       <line x1="190" y1="64" x2="150" y2="138" stroke="#5c5c5c" marker-end="url(#arrow)"/>
       <text x="155" y="100" font-size="8" fill="#5c5c5c" font-family="system-ui">borrower cancels</text>
-
       <line x1="250" y1="42" x2="298" y2="42" stroke="#5c5c5c" marker-end="url(#arrow)"/>
       <text x="268" y="34" font-size="8" fill="#5c5c5c" font-family="system-ui">lender accepts</text>
-
       <line x1="360" y1="64" x2="280" y2="138" stroke="#5c5c5c" marker-end="url(#arrow)"/>
       <text x="310" y="100" font-size="8" fill="#5c5c5c" font-family="system-ui">full repay</text>
-
       <line x1="400" y1="64" x2="400" y2="138" stroke="#5c5c5c" marker-end="url(#arrow)"/>
       <text x="410" y="100" font-size="8" fill="#5c5c5c" font-family="system-ui">term expires</text>
     </svg>

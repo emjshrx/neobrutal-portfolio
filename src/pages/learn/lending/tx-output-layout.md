@@ -52,7 +52,7 @@ description: "Fixed output indices and OP_RETURN layout for offer creation trans
   <nav class="lesson-nav">
     <strong>Related</strong>
     <ul>
-      <li><a href="/learn/lending/0006-offer-state-and-tx-layout">Lesson 6</a></li>
+      <li><a href="/learn/lending/0005-offer-state-and-tx-layout">Lesson 5</a></li>
       <li><a href="/learn/lending/parameter-encoding">Parameter encoding (docs design)</a></li>
     </ul>
   </nav>

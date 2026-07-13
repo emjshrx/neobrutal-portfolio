@@ -1,12 +1,12 @@
 ---
 layout: "../../../layouts/LendingLayout.astro"
-title: "Lesson 6 — Offer State & Tx Layout"
+title: "Lesson 5 — Offer State & Tx Layout"
 header: "Lessons"
-order: "6"
+order: "5"
 description: "On-chain state and transaction layout — output indices, storage slots, and supporting covenants."
 duration: "~12 min"
 ---
-<p class="meta">Lesson 6 · ~12 min · <a href="/learn/lending/0005-simplicity-primitives">Lesson 5</a></p>
+<p class="meta">Lesson 5 · ~12 min · <a href="/learn/lending/0004-simplicity-primitives">Lesson 4</a></p>
   <h1>On-chain state &amp; transaction layout</h1>
   <p class="lead">PR #13 and #15 hinge on <em>where</em> outputs sit and <em>what</em> the covenant stores. This lesson fills that gap.</p>
 
@@ -71,7 +71,6 @@ duration: "~12 min"
 
   <section class="quiz" data-quiz>
     <h2>Check your understanding</h2>
-
     <div class="question-block" data-answer="1">
       <p class="question">1. What does is_active=false mean for an offer?</p>
       <div class="options">
@@ -82,7 +81,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="2">
       <p class="question">2. Where does the indexer read offer metadata?</p>
       <div class="options">
@@ -93,7 +91,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="0">
       <p class="question">3. What is ScriptAuth used for in offer creation?</p>
       <div class="options">
@@ -104,7 +101,6 @@ duration: "~12 min"
       </div>
       <p class="feedback"></p>
     </div>
-
     <p class="score"></p>
   </section>
 

@@ -15,11 +15,6 @@ description: "Primary protocol sources, reference repos, and communities for len
   Reference implementation: Rust contracts crate, indexer API, CLI, React demo. Use for: how offers are created/indexed in practice (may differ from older doc sections).
 - [Simplicity Lending demo](https://demolending.distributedlab.com/)
   Live borrower/lender UX on testnet. Use for: seeing the offer lifecycle end-to-end before reading code.
-- [Blockstream/lwk](https://github.com/Blockstream/lwk)
-  Liquid Wallet Kit (Rust). Use for: what wallet primitives exist underneath Dart bindings.
-- [SatoshiPortal/lwk-dart](https://github.com/SatoshiPortal/lwk-dart)
-  Dart/Flutter bindings for LWK via Flutter Rust Bridge. Use for: how mobile apps call Rust wallet logic — not for PR-specific lending code.
-
 ## Wisdom (Communities)
 
 - [Simplicity Telegram group](https://t.me/simplicity_lang) (linked from Simplicity docs)

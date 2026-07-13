@@ -2,7 +2,7 @@
 layout: "../../../layouts/LendingLayout.astro"
 title: "Factory Issuance → Offer Detection"
 header: "Reference"
-order: "9"
+order: "8"
 description: "How the indexer detects a new lending offer from factory issuance."
 ---
 <p class="meta">Reference · <a href="/learn/lending/indexer-api">Indexer API</a></p>

@@ -1,12 +1,12 @@
 ---
 layout: "../../../layouts/LendingLayout.astro"
-title: "Lesson 5 — Simplicity Primitives"
+title: "Lesson 4 — Simplicity Primitives"
 header: "Lessons"
-order: "5"
+order: "4"
 description: "Simplicity primitives for covenant review — Taproot trees, witness inputs, and UTXOs the wallet doesn't own."
 duration: "~12 min"
 ---
-<p class="meta">Lesson 5 · ~12 min · <a href="/learn/lending/0004-lwk-and-frb">Lesson 4</a></p>
+<p class="meta">Lesson 4 · ~12 min · <a href="/learn/lending/0003-indexer-and-discovery">Lesson 3</a></p>
   <h1>Inside the covenant: Simplicity primitives</h1>
   <p class="lead">Before reviewing PR #16, understand how lwk-dart builds Simplicity covenants internally — Taproot trees, witness inputs, and UTXOs the wallet doesn’t own.</p>
 
@@ -84,7 +84,6 @@ StateTaprootBuilder
 
   <section class="quiz" data-quiz>
     <h2>Check your understanding</h2>
-
     <div class="question-block" data-answer="1">
       <p class="question">1. What does a StateTaproot data leaf store?</p>
       <div class="options">
@@ -95,7 +94,6 @@ StateTaprootBuilder
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="2">
       <p class="question">2. When is ExternalUtxo used in transaction building?</p>
       <div class="options">
@@ -106,7 +104,6 @@ StateTaprootBuilder
       </div>
       <p class="feedback"></p>
     </div>
-
     <div class="question-block" data-answer="0">
       <p class="question">3. For stateful Taproot finalize, which key signs?</p>
       <div class="options">
@@ -117,14 +114,13 @@ StateTaprootBuilder
       </div>
       <p class="feedback"></p>
     </div>
-
     <p class="score"></p>
   </section>
 
   <nav class="lesson-nav">
     <strong>Next</strong>
     <ul>
-      <li><a href="/learn/lending/0006-offer-state-and-tx-layout">Lesson 6: State &amp; tx layout</a></li>
-      <li><a href="/learn/lending/lwk-frb-stack">LWK stack reference</a></li>
+      <li><a href="/learn/lending/0005-offer-state-and-tx-layout">Lesson 5: State &amp; tx layout</a></li>
+      <li><a href="/learn/lending/supporting-covenants">Supporting covenants reference</a></li>
     </ul>
   </nav>

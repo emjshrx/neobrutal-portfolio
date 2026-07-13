@@ -1,6 +1,6 @@
 # Emjshrx's Portfolio: Neo-brutal Design
 
-<img src="./img/thumbnail.png" width="987" height="500">
+<img src="./public/img/thumbnail.png" width="987" height="500">
 
 ## 🧞 Commands
 

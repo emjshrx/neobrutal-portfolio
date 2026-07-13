@@ -15,9 +15,18 @@ const {
   title,
   currentPage,
   description = "The portfolio website of Emjshrx",
-  image = "/favicon.ico",
+  image = "/img/thumbnail.png",
   type = "website",
 } = Astro.props;
+
+const siteName = "Emjshrx";
+const titleSuffix = " — Developer, Designer & Hodler";
+const fullTitle =
+  title.length >= 50
+    ? title
+    : title.includes("Emjshrx's Portfolio")
+      ? `${title}${titleSuffix}`
+      : `${title} | ${siteName}${titleSuffix}`;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const imageURL = new URL(image, Astro.site);
@@ -30,18 +39,19 @@ const completedPages = ["Home", "About"];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta name="title" content={title} />
+    <title>{fullTitle}</title>
+    <meta name="title" content={fullTitle} />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={imageURL} />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageURL} />
   </head>

@@ -44,6 +44,6 @@ export const projectsList: ProjectType[] = [
     html_url: "https://github.com/emjshrx/neobrutal-portfolio",
     contributor: false,
     imageUrl:
-      "https://raw.githubusercontent.com/emjshrx/neobrutal-portfolio/main/img/thumbnail.png",
+      "https://raw.githubusercontent.com/emjshrx/neobrutal-portfolio/main/public/img/thumbnail.png",
   },
 ];
